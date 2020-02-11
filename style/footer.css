@@ -1,0 +1,20 @@
+.footex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.footerbox {
+    border-style: groove;
+}
+
+.copyright {
+    flex: 1;
+    padding: 1rem;
+}
+
+.foottext {
+    flex: 1;
+    padding: 1rem;
+    text-align: right;
+}
