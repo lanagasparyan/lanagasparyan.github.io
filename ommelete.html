@@ -6,15 +6,14 @@
     <title>Cooking Blog</title>
 
     <meta content="wisth=device-width, initial-scale=1,maximum-scale=1" name="viewport" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/main.css">
 </head>
-
 
 <body>
     <div class='container'>
         <div class="header box">
-            <div>
+            <nav>
                 <ul class="nomargin navbarul">
                     <li class="navbarli"><a class="navbara" href="index.html">Home</a></li>
                     <li class="navbarli"><a class="navbara" href="https://twitter.com/udacity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a></li>
@@ -22,44 +21,42 @@
                     <li class="navbarli"><a class="navbara" href="https://www.instagram.com/udacity/?hl=en " target="_blank">Instagram</a></li>
                     <li class="navbarli" style="float:right"><a class="navbara" href="about.html">About</a></li>
                 </ul>
-
-            </div>
+            </nav>
             <div class="hero-image nomargins">
-                <div>
-                    <div class="hero-text">
-                        <h1>Welcome to Lana's Cooking Blog</h1>
-                        <p>Cooking is a therapy.</p>
-                    </div>
+                <div class="hero-text">
+                    <h1>Welcome to Lana's Cooking Blog</h1>
+                    <p>Cooking is a therapy.</p>
                 </div>
             </div>
         </div>
         <div class="content box">
-            <div class="maincontent">
-                <article>
-                    <div class="blogtitle">
-                        <header>
-                            Armenian Omelette
-                        </header>
-
-                    </div>
-                    <div class="date">
-                        Posted on January 30, 2020
-                    </div>
-                    <div class="blogimage">
+            <article>
+                <div class="blogtitle">
+                    <header class="blogtitle ">
+                        Armenian Omelette
+                    </header>
+                </div>
+                <div class="date">
+                    Posted on January 30, 2020
+                </div>
+                <div class="blogimage">
+                    <figure>
                         <img id='omelettePic' src="images/armomlette.jpg" alt=" Armenian Omelette" width="75%" height="auto">
-                    </div>
-                    <div class="excerpt">
-
-                        This is my childhood and I am happy to introduce and bring it to a table of my family and yours if would allow me so. Simple and delicious... Our day in Georgia starts with a family breakfast. This tradition brings all members of family close to each
-                        other. Bar> I believe breakfast should be simple, light and delicious. So I decided to post this beautiful Armenian Omelette for you. happy to introduce and bring it to a table of my family and yours if would allow me so. Simple
-                        and delicious...
-                    </div>
-                </article>
-
-                <div class="blogex">
-
+                        <figcaption> &#9734; Breakfast- Armenian Omelette.</figcaption>
+                    </figure>
+                </div>
+                <div class="excerpt">
+                    This is my childhood and I am happy to introduce and bring it to a table of my family and yours if would allow me so. Simple and delicious... Our day in Georgia starts with a family breakfast. This tradition brings all members of family close to each
+                    other. Bar> I believe breakfast should be simple, light and delicious. So I decided to post this beautiful Armenian Omelette for you. happy to introduce and bring it to a table of my family and yours if would allow me so. Simple and
+                    delicious...
+                </div>
+            </article>
+            <div class="blogex">
+                <section>
                     <div class="decribtion">
-                        <ol> Ingredients
+                        <header>
+                            <ol> Ingredients
+                        </header>
                     </div>
                     <div class='ingredients'>
                         <li> 1 large onion</li>
@@ -72,10 +69,14 @@
                         <li>6 eggs</li>
                     </div>
                     </ol>
-                </div>
-                <div class="blogex">
+                </section>
+            </div>
+            <div class="blogex">
+                <section>
                     <div class="decribtion">
-                        <ol> Instructions
+                        <header>
+                            <ol> Instructions
+                        </header>
                     </div>
                     <div class="ingredients">
                         <li>Peel and chop the onion.</li>
@@ -91,53 +92,62 @@
                         <li>Serve with bread. Enjoy!</li>
                     </div>
                     </ol>
-                </div>
+                </section>
             </div>
+            <a href="https://www.facebook.com/Udacity/" target="_blank" class="fa fa-facebook "></a>
+            <a href="https://twitter.com/udacity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="fa fa-twitter "></a>
+            <a href="https://www.linkedin.com/school/udacity/" target="_blank" class="fa fa-linkedin "></a>
+
             <div class="blogex">
-                <div> <img src="images/cookpic.jpeg" alt="Author's Picture" width="80%"></div>
-                <div class="excerpt"> Lana Gasparyan is creator and author graduated from Culinary Institute of America in Hyde Park in 2010. Total experience 10 year. Lana is originally from Georgia . <br> Follow us on Instagram , Facebook and Twitter.
-                </div>
-                <div class="author">
-                    Author: Lana Gasparyan
-                </div>
+                <section>
+                    <figure>
+                        <img src="images/cookpic.jpeg" alt="Author's Picture" width="80%">
+                        <figcaption class="cardtitle"> &#9734; The Author - Lana Gasparyan.</figcaption>
+                    </figure>
+                    <div class="excerpt"> Lana Gasparyan is creator and author graduated from Culinary Institute of America in Hyde Park in 2010. Total experience 10 year. Lana is originally from Georgia . <br> Follow us on Instagram , Facebook and Twitter.
+                    </div>
+                    <div class="author">
+                        Author: Lana Gasparyan
+                    </div>
+                </section>
             </div>
             <div class='commentbox'>
-                <textarea class="commentext" name="comment" form="usrform" rows="4">Enter your comment...</textarea>
-                <button class='submit'> Submit </button>
+                <section>
+                    <textarea class="commentext" name="comment" form="usrform" rows="4">Enter your comment...</textarea>
+                    <button class='submit'> Submit </button>
+                </section>
             </div>
         </div>
         <div class="sider box">
-            <div class="cardex">
-                <div class="cardimage"> <img src="images/KITCHENCOOK.jpeg" alt="My Kitchen" width="75%"></div>
-                <div class="cardtitle">
-                    <em> "Cooking is about passion, so it may look slightly 
-                            temperamental 
-                        in a way it's 
-                        too assertive to the naked eye"</em></br>
-                    Gordon Ramsey.
-                </div>
-            </div>
             <aside>
                 <div class="cardex">
-                    <div class="cardimage"> <img src="images/spicys copy.jpeg" alt="My Kitchen" width="75%"></div>
-                    <div class="cardtitle">
-                        Eating food is nourishment for body. Preparing it is a nourishment for soul.
-                    </div>
+                    <figure>
+                        <div class="cardimage"> <img src="images/KITCHENCOOK.jpeg" alt="My Kitchen" width="75%"></div>
+                        <figcaption class="cardtitle"> &#9734; "Cooking is about passion, so it may look slightly temperamental in a way it's too assertive to the naked eye"- Gordon Ramsey.</figcaption>
+                    </figure>
                 </div>
                 <div class="cardex">
-                    <div class="cardimage"> <img src="images/bettergarlik2.jpeg" alt="My Kitchen" width="75%"></div>
-                    <div class="cardtitle">
-                        Not only garlic makes your food delicious , it has medicinal properties.
-                    </div>
+                    <figure>
+                        <div class="cardimage"> <img src="images/spicys copy.jpeg" alt="My Kitchen" width="75%"></div>
+                        <figcaption class="cardtitle"> &#9734; Eating food is nourishment for the body. Preparing it is a nourishment for theEating food is nourishment for body. Preparing it is a nourishment for soul. soul.</figcaption>
+                    </figure>
                 </div>
                 <div class="cardex">
-                    <div class="cardimage"> <img src="images/kitchen.jpeg" alt="My Kitchen" width="75%"></div>
-                    <div class="cardtitle">
-                        The Kitchen is your gallery.
-                    </div>
+                    <figure>
+                        <div class="cardimage">
+                            <img src="images/bettergarlik2.jpeg" alt="My Kitchen" width="75%">
+                        </div>
+                        <figcaption class="cardtitle"> &#9734; Not only garlic makes your food delicious , it has medicinal properties.</figcaption>
+                    </figure>
                 </div>
+                <div class="cardex">
+                    <figure>
+                        <div class="cardimage"> <img src="images/kitchen.jpeg" alt="My Kitchen" width="75%"></div>
+                        <figcaption class="cardtitle"> &#9734; The Kitchen is your gallery.</figcaption>
+                    </figure>
+                </div>
+            </aside>
         </div>
-        </aside>
 
         <div class="footer box ">
             <footer>
@@ -146,7 +156,9 @@
                         Contact us : 888.888.8888 <br> email: cookwlana@gmail.com
                     </div>
                     <div class="copyright">
-                        &copy; Lana Gasparyan <br> Privacy policy
+                        <div id="coright">
+                            &copy; Lana Gasparyan <br> Privacy policy
+                        </div>
                     </div>
                 </div>
             </footer>
