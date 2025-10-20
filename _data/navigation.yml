@@ -1,0 +1,23 @@
+# Main navigation
+main:
+  - title: "About"
+    url: "/about/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Skills"
+    url: "/skills/"
+  - title: "Resume"
+    url: "/resume/"
+  - title: "Blog"
+    url: "/posts/"
+
+# Footer navigation
+footer:
+  - title: "About"
+    url: "/about/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Skills"
+    url: "/skills/"
+  - title: "Resume"
+    url: "/resume/"
