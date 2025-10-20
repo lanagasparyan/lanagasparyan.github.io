@@ -30,7 +30,7 @@ twitter_username: # Add your Twitter handle if you have one
 github_username: lanagasparyan
 
 # Build settings
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
