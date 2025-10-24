@@ -1,0 +1,78 @@
+/**
+ * Call-to-Action Section Styles
+ * Prominent section encouraging user engagement
+ */
+
+.cta-section {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+    border-radius: 1.5rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin: 4rem auto;
+    max-width: 900px;
+    box-shadow: 0 8px 24px var(--shadow-hover);
+
+    h2 {
+        font-size: 2.5rem;
+        color: white;
+        margin-bottom: 1rem;
+        font-family: 'Inter', sans-serif;
+    }
+
+    p {
+        font-size: 1.25rem;
+        color: rgba(255, 255, 255, 0.95);
+        margin-bottom: 2rem;
+        line-height: 1.6;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .btn {
+            background: white;
+            color: var(--accent);
+            border-color: white;
+
+            &:hover {
+                background: var(--bg-secondary);
+                transform: translateY(-2px);
+            }
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border-color: white;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.1);
+                color: white;
+                border-color: white;
+            }
+        }
+    }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 3rem 1.5rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+        }
+
+        .cta-buttons {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+}

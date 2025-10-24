@@ -196,3 +196,24 @@ permalink: /
         </div>
     </div>
 </section>
+
+<!-- CTA SECTION -->
+<section class="section">
+    <div class="cta-section">
+        <h2>Let's Build Something Great Together</h2>
+        <p>
+            I'm always interested in hearing about new projects and opportunities.
+            Whether you have a question or just want to say hi, feel free to reach out!
+        </p>
+        <div class="cta-buttons">
+            <a href="mailto:{{ site.social.email }}" class="btn">
+                <i class="fas fa-envelope"></i>
+                Get In Touch
+            </a>
+            <a href="{{ '/resume/' | relative_url }}" class="btn btn-outline">
+                <i class="fas fa-file-alt"></i>
+                View Resume
+            </a>
+        </div>
+    </div>
+</section>
