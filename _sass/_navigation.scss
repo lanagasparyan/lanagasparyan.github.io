@@ -27,13 +27,13 @@
 
 .nav-logo {
     font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    text-decoration: none;
+    font-weight: 700 !important;
+    color: var(--text-primary) !important;
+    text-decoration: none !important;
     transition: color 0.3s ease;
 
     &:hover {
-        color: var(--accent);
+        color: var(--accent) !important;
     }
 }
 
@@ -50,20 +50,20 @@
     }
 
     a {
-        color: var(--text-secondary);
-        text-decoration: none;
-        font-weight: 500;
+        color: var(--text-secondary) !important;
+        text-decoration: none !important;
+        font-weight: 500 !important;
         transition: color 0.3s ease;
         position: relative;
 
         &:hover {
-            color: var(--accent);
+            color: var(--accent) !important;
         }
 
         // Active page indicator
         &.active {
-            color: var(--accent);
-            font-weight: 600;
+            color: var(--accent) !important;
+            font-weight: 600 !important;
         }
 
         // Underline animation on hover
