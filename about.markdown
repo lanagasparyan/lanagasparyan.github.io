@@ -177,7 +177,7 @@ permalink: /about/
             </div>
             <div class="interest-item">
                 <i class="fas fa-users"></i>
-                <span class="interest-text">Helping others learn tech</span>
+                <span class="interest-text">Networking with tech professionals</span>
             </div>
             <div class="interest-item">
                 <i class="fas fa-book-reader"></i>
