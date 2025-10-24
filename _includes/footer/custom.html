@@ -1,0 +1,23 @@
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-text">
+            &copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Built with Jekyll & hosted on GitHub Pages.
+        </div>
+        <div class="footer-social">
+            <a href="https://github.com/{{ site.social.github }}" class="social-link" aria-label="GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" class="social-link" aria-label="LinkedIn" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:{{ site.social.email }}" class="social-link" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts loaded at end of page -->
+<script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/navigation.js' | relative_url }}"></script>

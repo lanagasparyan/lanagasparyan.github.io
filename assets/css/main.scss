@@ -2,5 +2,17 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "minimal-mistakes/skins/mint"; // skin
-@import "minimal-mistakes";        // main partials
+@import "reset";                    // CSS reset
+@import "variables";                // custom CSS variables for theming
+@import "navigation";               // modern navigation styles
+@import "buttons";                  // button component system
+@import "sections";                 // common section styles
+@import "hero";                     // hero section styles
+@import "skills";                   // skills section styles
+@import "skills-page";              // full skills page styles
+@import "projects";                 // projects section styles
+@import "projects-page";            // full projects page styles
+@import "cta";                      // call-to-action section styles
+@import "about";                    // about page styles
+@import "resume-page";              // resume page styles
+@import "footer";                   // footer styles

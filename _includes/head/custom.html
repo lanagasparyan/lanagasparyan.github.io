@@ -1,0 +1,17 @@
+<!-- Custom head content for Lana Gasparyan Portfolio -->
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
+
+<!-- Google Fonts - Inter & Fira Code -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Theme Toggle Script - Load early to prevent flash -->
+<script>
+  // Check for saved theme preference or default to light mode
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+</script>
