@@ -26,28 +26,50 @@
 }
 
 .nav-logo {
-    font-size: 1.25rem;
-    font-weight: 800;
+    font-size: 1.125rem;
+    font-weight: 600;
     font-family: 'Fira Code', 'Source Code Pro', 'Roboto Mono', 'JetBrains Mono', monospace;
     letter-spacing: 0.5px;
     text-decoration: none;
-    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 50%, #FFB088 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-size: 200% auto;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
 
     &:hover {
-        background-position: right center;
-        transform: scale(1.05);
+        transform: translateY(-2px);
+    }
+
+    // Python syntax highlighting
+    .code-keyword {
+        color: #C792EA; // Purple for 'def'
+        font-weight: 700;
+    }
+
+    .code-function {
+        color: #FFCB6B; // Yellow for function name
+        font-weight: 700;
+    }
+
+    .code-bracket,
+    .code-punctuation {
+        color: var(--text-primary);
     }
 }
 
-// Fallback for browsers that don't support background-clip
-@supports not (background-clip: text) {
-    .nav-logo {
-        color: var(--accent);
+// Dark mode adjustments for better contrast
+[data-theme="dark"] .nav-logo {
+    .code-keyword {
+        color: #C792EA;
+    }
+
+    .code-function {
+        color: #FFCB6B;
+    }
+
+    .code-bracket,
+    .code-punctuation {
+        color: var(--text-primary);
     }
 }
 
