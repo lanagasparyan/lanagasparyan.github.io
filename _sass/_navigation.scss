@@ -30,11 +30,23 @@
     font-weight: 800;
     font-family: 'Fira Code', 'Source Code Pro', 'Roboto Mono', 'JetBrains Mono', monospace;
     letter-spacing: 0.5px;
-    color: var(--text-primary);
     text-decoration: none;
-    transition: color 0.3s ease;
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 50%, #FFB088 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% auto;
+    transition: all 0.3s ease;
 
     &:hover {
+        background-position: right center;
+        transform: scale(1.05);
+    }
+}
+
+// Fallback for browsers that don't support background-clip
+@supports not (background-clip: text) {
+    .nav-logo {
         color: var(--accent);
     }
 }
