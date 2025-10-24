@@ -42,12 +42,12 @@
 
     // Python syntax highlighting
     .code-keyword {
-        color: #C792EA; // Purple for 'def'
+        color: #0abab5; // Oceanic Teal for 'def'
         font-weight: 700;
     }
 
     .code-function {
-        color: #FFCB6B; // Yellow for function name
+        color: #FF6B6B; // Coral for function name
         font-weight: 700;
     }
 
@@ -60,11 +60,11 @@
 // Dark mode adjustments for better contrast
 [data-theme="dark"] .nav-logo {
     .code-keyword {
-        color: #C792EA;
+        color: #22d3ee; // Brighter teal for dark mode
     }
 
     .code-function {
-        color: #FFCB6B;
+        color: #FF9B9B; // Lighter coral for dark mode
     }
 
     .code-bracket,
