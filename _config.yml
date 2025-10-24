@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Lana's Tech Journey
-email: lana@example.com  # Replace with your actual email
+title: Lana Gasparyan - Software Engineer
+email: lana5545@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Software Engineering graduate from Western Governors University. 
-  Passionate about technology, coding, and continuous learning. 
-  Welcome to my journey in the world of software development!
+  Full-Stack Software Engineer with 3+ years building production applications
+  serving 65K+ annual users. Expertise in React, Spring Boot, and AWS with
+  proven ability to architect and deploy scalable web applications.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lanagasparyan.github.io" # Your GitHub Pages URL
 twitter_username: # Add your Twitter handle if you have one
@@ -41,13 +41,14 @@ plugins:
 author: Lana Gasparyan
 university: Western Governors University
 degree: Software Engineering
-location: # Add your location if you want
+location: New York, NY
+phone: +1-(917) 943-2490
 
-# Social media links (add your actual usernames)
+# Social media links
 social:
   github: lanagasparyan
-  linkedin: # Add your LinkedIn username
-  email: lana@example.com  # Replace with your actual email
+  linkedin: lanagasparyan
+  email: lana5545@gmail.com
 
 # Site settings for GitHub Pages
 timezone: America/New_York  # Change to your timezone
