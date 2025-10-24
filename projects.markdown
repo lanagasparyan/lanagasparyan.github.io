@@ -1,99 +1,326 @@
 ---
-layout: single
+layout: home
 title: "Projects"
 permalink: /projects/
-header:
-  overlay_image: /assets/images/unsplash-image-2.jpg
-  overlay_filter: 0.5
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
-## Featured Projects
+<!-- PROJECTS HERO -->
+<section class="projects-hero">
+    <h1>My Projects</h1>
+    <p class="subtitle">
+        A comprehensive showcase of my full-stack development work,
+        from production web applications to enterprise systems
+    </p>
+</section>
 
-Here are some of my key technical projects that showcase my full-stack development skills and cloud expertise.
+<!-- PROJECTS PAGE CONTENT -->
+<div class="projects-page-content">
+    <!-- Introduction Section -->
+    <div class="projects-intro">
+        <p>
+            I specialize in building full-stack applications that solve real problems and serve real users.
+            My projects span web development, AI integration, cloud architecture, and enterprise systems,
+            demonstrating proficiency across the entire development stack.
+        </p>
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">65K+</span>
+                <span class="stat-label">Annual Users</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">6+</span>
+                <span class="stat-label">Major Projects</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Technologies</span>
+            </div>
+        </div>
+    </div>
 
----
+    <!-- Featured Production Projects -->
+    <section class="projects-section">
+        <h2>Production Web Applications</h2>
 
-## 🌐 BinaryDecimal.com
-**Full-Stack Web Toolkit | 40K+ Annual Users**
+        <!-- Project 1: BinaryDecimal.com -->
+        <div class="project-full-card">
+            <div class="project-full-content">
+                <div class="project-full-image">
+                    <img src="{{ '/assets/images/binarydecimal/BinmaryDecimal.png' | relative_url }}" alt="BinaryDecimal.com">
+                </div>
+                <div class="project-full-details">
+                    <div class="project-full-header">
+                        <div class="project-full-title">
+                            <h3>BinaryDecimal.com</h3>
+                            <p class="project-full-tagline">40K+ Annual Users</p>
+                        </div>
+                        <div class="project-full-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <p class="project-full-description">
+                        A comprehensive web toolkit with 17+ utilities serving thousands of users daily,
+                        including a full-featured Markdown editor, password generator, and Mermaid diagram
+                        editor/viewer. Built with modern React architecture and optimized for performance.
+                    </p>
+                    <div class="project-full-tech">
+                        <span class="tech-label">Technologies:</span>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Netlify/Vercel</span>
+                        </div>
+                    </div>
+                    <div class="project-full-links">
+                        <a href="https://binarydecimal.com" class="btn btn-primary btn-small" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visit Site
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-A comprehensive web toolkit with **17+ utilities** serving thousands of users, including a full-featured Markdown editor, password generator, and Mermaid diagram editor/viewer.
+        <!-- Project 2: MemoDiction.com -->
+        <div class="project-full-card">
+            <div class="project-full-content">
+                <div class="project-full-image">
+                    <img src="{{ '/assets/images/memodiction/MemoDiction.png' | relative_url }}" alt="MemoDiction.com">
+                </div>
+                <div class="project-full-details">
+                    <div class="project-full-header">
+                        <div class="project-full-title">
+                            <h3>MemoDiction.com</h3>
+                            <p class="project-full-tagline">25K+ Annual Users</p>
+                        </div>
+                        <div class="project-full-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <p class="project-full-description">
+                        An intelligent dictionary application with automated content generation pipeline using
+                        OpenAI API and advanced prompt engineering. Features automated deployment via GitHub
+                        Actions CI/CD, demonstrating modern DevOps practices.
+                    </p>
+                    <div class="project-full-tech">
+                        <span class="tech-label">Technologies:</span>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                            <span class="tech-tag">Prompt Engineering</span>
+                        </div>
+                    </div>
+                    <div class="project-full-links">
+                        <a href="https://memodiction.com" class="btn btn-primary btn-small" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visit Site
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-**Technologies**: React, TypeScript, Tailwind CSS, Vite, Netlify/Vercel  
-**Live Site**: [binarydecimal.com](https://binarydecimal.com)
+        <!-- Project 3: Skill Quest -->
+        <div class="project-full-card">
+            <div class="project-full-content">
+                <div class="project-full-image">
+                    <img src="{{ '/assets/images/Skillquest/Screenshot at Oct 24 17-39-35.png' | relative_url }}" alt="Skill Quest">
+                </div>
+                <div class="project-full-details">
+                    <div class="project-full-header">
+                        <div class="project-full-title">
+                            <h3>Skill Quest</h3>
+                            <p class="project-full-tagline">Full-Stack Application</p>
+                        </div>
+                        <div class="project-full-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <p class="project-full-description">
+                        A complete full-stack AI Learning Planner from concept to production with secure JWT
+                        authentication, PostgreSQL database, and LLM integration. Containerized with Docker
+                        and deployed to Railway, showcasing enterprise-level architecture.
+                    </p>
+                    <div class="project-full-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Secure user authentication with JWT tokens</li>
+                            <li>AI-powered personalized learning recommendations</li>
+                            <li>Progress tracking and analytics dashboard</li>
+                            <li>Containerized deployment with Docker</li>
+                        </ul>
+                    </div>
+                    <div class="project-full-tech">
+                        <span class="tech-label">Technologies:</span>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Railway</span>
+                            <span class="tech-tag">OpenAI API</span>
+                        </div>
+                    </div>
+                    <div class="project-full-links">
+                        <a href="https://github.com/lanagasparyan/skillquest" class="btn btn-primary btn-small" target="_blank">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
----
+    <!-- Enterprise & Professional Projects -->
+    <section class="projects-section">
+        <h2>Enterprise Systems</h2>
 
-## 🤖 MemoDiction.com
-**AI-Powered Dictionary | 25K+ Annual Users**
+        <!-- Project 4: Enterprise Inventory Management -->
+        <div class="project-full-card">
+            <div class="project-full-content">
+                <div class="project-full-image"></div>
+                <div class="project-full-details">
+                    <div class="project-full-header">
+                        <div class="project-full-title">
+                            <h3>Enterprise Inventory Management Platform</h3>
+                            <p class="project-full-tagline">Java Application | MVC Architecture</p>
+                        </div>
+                        <div class="project-full-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                    </div>
+                    <p class="project-full-description">
+                        Designed and developed a production-ready inventory platform from requirements
+                        through deployment with Java, SQL database, JavaFX GUI, and MVC architecture.
+                        Demonstrates strong fundamentals in software engineering principles.
+                    </p>
+                    <div class="project-full-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Complete CRUD operations for inventory management</li>
+                            <li>Real-time data synchronization with SQL database</li>
+                            <li>Automated reporting dashboard with analytics</li>
+                            <li>Comprehensive error handling and input validation</li>
+                            <li>Unit testing coverage for critical components</li>
+                        </ul>
+                    </div>
+                    <div class="project-full-tech">
+                        <span class="tech-label">Technologies:</span>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">JavaFX</span>
+                            <span class="tech-tag">MVC Architecture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-An intelligent dictionary application with automated content generation pipeline using OpenAI API and advanced prompt engineering, deployed via GitHub Actions CI/CD.
+        <!-- Project 5: AI Code Quality Analyzer -->
+        <div class="project-full-card">
+            <div class="project-full-content">
+                <div class="project-full-image"></div>
+                <div class="project-full-details">
+                    <div class="project-full-header">
+                        <div class="project-full-title">
+                            <h3>AI-Powered Code Quality Analyzer</h3>
+                            <p class="project-full-tagline">Full-Stack Application | Python & React</p>
+                        </div>
+                        <div class="project-full-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <p class="project-full-description">
+                        Built an end-to-end full-stack application with Python Flask backend, React frontend,
+                        and RESTful API for automated code quality analysis and best practice recommendations.
+                        Integrates NLP for intelligent code analysis.
+                    </p>
+                    <div class="project-full-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Static code analysis with complexity metrics</li>
+                            <li>Style guide enforcement and linting</li>
+                            <li>AI-powered improvement suggestions</li>
+                            <li>User authentication and project management</li>
+                            <li>CI/CD pipeline integration</li>
+                        </ul>
+                    </div>
+                    <div class="project-full-tech">
+                        <span class="tech-label">Technologies:</span>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-**Technologies**: Python, OpenAI API, React, GitHub Actions, Prompt Engineering  
-**Live Site**: [memodiction.com](https://memodiction.com)
+    <!-- Additional Projects -->
+    <section class="projects-section">
+        <h2>Specialized Solutions</h2>
 
----
+        <!-- Project 6: Scientific Data Processing -->
+        <div class="project-full-card">
+            <div class="project-full-content">
+                <div class="project-full-image"></div>
+                <div class="project-full-details">
+                    <div class="project-full-header">
+                        <div class="project-full-title">
+                            <h3>Scientific Data Processing</h3>
+                            <p class="project-full-tagline">Python Solutions | NetCDF Data Analysis</p>
+                        </div>
+                        <div class="project-full-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <p class="project-full-description">
+                        Developed custom Python solutions for NetCDF scientific data merging and analysis,
+                        processing multi-dimensional climate datasets for international research clients.
+                        Demonstrates ability to work with complex data structures and scientific computing.
+                    </p>
+                    <div class="project-full-tech">
+                        <span class="tech-label">Technologies:</span>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NetCDF</span>
+                            <span class="tech-tag">Scientific Computing</span>
+                            <span class="tech-tag">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-## 🎯 Skill Quest
-**AI Learning Planner | Full-Stack Application**
-
-A complete full-stack AI Learning Planner from concept to production with secure JWT authentication, PostgreSQL database, and LLM integration, containerized with Docker and deployed to Railway.
-
-**Technologies**: React, Spring Boot, PostgreSQL, JWT Authentication, Docker, Railway, OpenAI API  
-**Features**: User authentication, AI-powered learning recommendations, progress tracking
-
----
-
-## 🗄️ Enterprise Inventory Management Platform
-**Java Application | MVC Architecture**
-
-Designed and developed a production-ready inventory platform from requirements through deployment with Java, SQL database, JavaFX GUI, and MVC architecture.
-
-**Technologies**: Java, SQL, JavaFX, MVC Architecture  
-**Features**: Complete CRUD operations, real-time data synchronization, automated reporting dashboard, comprehensive error handling, unit testing
-
----
-
-## 🔍 AI-Powered Code Quality Analyzer
-**Full-Stack Application | Python & React**
-
-Built an end-to-end full-stack application with Python Flask backend, React frontend, and RESTful API for automated code quality analysis and best practice recommendations.
-
-**Technologies**: Python, Flask, React, REST API, NLP, CI/CD  
-**Features**: Static code analysis, complexity detection, style guide enforcement, AI-powered improvement suggestions, user authentication
-
----
-
-## 📊 Scientific Data Processing
-**Python Solutions | NetCDF Data Analysis**
-
-Developed custom Python solutions for NetCDF scientific data merging and analysis, processing multi-dimensional climate datasets for international research clients.
-
-**Technologies**: Python, NetCDF, Scientific Computing, Data Analysis  
-**Impact**: Processed complex climate datasets for research applications
-
----
-
-## 📝 Markdown to ENEX Converter
-**Enterprise Tool | Custom Development**
-
-Created an automated Markdown to ENEX converter from scratch with complex formatting and metadata preservation for enterprise knowledge management.
-
-**Technologies**: Python, Markdown Processing, Evernote API, Data Transformation  
-**Features**: Complex formatting preservation, metadata handling, batch processing
-
----
-
-## 🛠️ Additional Projects
-
-- **Custom Python Solutions**: Various automation and data processing tools
-- **Open Source Contributions**: Active contributor to multiple repositories
-- **Learning Projects**: Continuous exploration of new technologies and frameworks
-
----
-
-## Get In Touch
-
-Interested in collaborating on a project or have questions about my work? I'd love to hear from you!
-
-[Contact Me](/about/){: .btn .btn--primary}
+    <!-- CTA Section -->
+    <div class="cta-section" style="margin-top: 4rem;">
+        <h2>Want to See More?</h2>
+        <p>
+            These are just the highlights! I'm always working on new projects and learning new technologies.
+            Check out my GitHub for more, or get in touch to discuss collaboration opportunities.
+        </p>
+        <div class="cta-buttons">
+            <a href="https://github.com/{{ site.social.github }}" class="btn btn-primary" target="_blank">
+                <i class="fab fa-github"></i>
+                View GitHub Profile
+            </a>
+            <a href="mailto:{{ site.social.email }}" class="btn btn-outline">
+                <i class="fas fa-envelope"></i>
+                Get in Touch
+            </a>
+        </div>
+    </div>
+</div>
