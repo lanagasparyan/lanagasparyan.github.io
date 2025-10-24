@@ -18,7 +18,7 @@ permalink: /resume/
         </a>
         <a href="mailto:{{ site.social.email }}" class="btn btn-outline">
             <i class="fas fa-envelope"></i>
-            Email Resume
+            Contact Me
         </a>
     </div>
 </section>
