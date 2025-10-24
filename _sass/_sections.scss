@@ -14,13 +14,13 @@
     margin-bottom: 3rem;
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2.5rem !important;
         margin-bottom: 1rem;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', sans-serif !important;
     }
 }
 
 .section-subtitle {
-    font-size: 1.125rem;
+    font-size: 1.125rem !important;
     color: var(--text-secondary);
 }

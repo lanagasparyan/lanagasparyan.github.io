@@ -6,8 +6,8 @@
 .btn {
     padding: 0.875rem 2rem;
     border-radius: 0.5rem;
-    font-weight: 600;
-    text-decoration: none;
+    font-weight: 600 !important;
+    text-decoration: none !important;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -15,32 +15,33 @@
     border: 2px solid transparent;
     white-space: nowrap;
     cursor: pointer;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
 
     &:hover {
-        text-decoration: none;
+        text-decoration: none !important;
     }
 }
 
 .btn-primary {
-    background: var(--accent);
-    color: white;
+    background: var(--accent) !important;
+    color: white !important;
 
     &:hover {
-        background: var(--accent-hover);
+        background: var(--accent-hover) !important;
+        color: white !important;
         transform: translateY(-2px);
         box-shadow: 0 4px 12px var(--shadow-hover);
     }
 }
 
 .btn-outline {
-    background: transparent;
-    border-color: var(--card-border);
-    color: var(--text-primary);
+    background: transparent !important;
+    border-color: var(--card-border) !important;
+    color: var(--text-primary) !important;
 
     &:hover {
-        border-color: var(--accent);
-        color: var(--accent);
+        border-color: var(--accent) !important;
+        color: var(--accent) !important;
         transform: translateY(-2px);
     }
 }
