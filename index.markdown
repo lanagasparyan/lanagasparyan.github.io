@@ -105,3 +105,94 @@ permalink: /
         </div>
     </div>
 </section>
+
+<!-- PROJECTS SECTION -->
+<section class="section" id="projects">
+    <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p class="section-subtitle">Real-world applications serving thousands of users</p>
+    </div>
+
+    <div class="projects-grid">
+        <!-- Project 1: BinaryDecimal.com -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="{{ '/assets/images/BinaryDecimal.png' | relative_url }}" alt="BinaryDecimal.com">
+            </div>
+            <div class="project-content">
+                <h3>BinaryDecimal.com</h3>
+                <p class="project-tagline">40K+ Annual Users</p>
+                <p class="project-description">
+                    Full-stack educational platform for computer science students. Serves 40,000+ users annually
+                    with interactive binary/decimal conversion tools and learning resources.
+                </p>
+                <div class="project-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                    <span class="tech-tag">Vite</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://binarydecimal.com" class="project-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Visit Site
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: MemoDiction.com -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="{{ '/assets/images/MemoDiction.png' | relative_url }}" alt="MemoDiction.com">
+            </div>
+            <div class="project-content">
+                <h3>MemoDiction.com</h3>
+                <p class="project-tagline">25K+ Annual Users</p>
+                <p class="project-description">
+                    Interactive vocabulary memorization tool using spaced repetition algorithms.
+                    Helps students improve SAT/GRE scores with personalized learning paths.
+                </p>
+                <div class="project-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">AWS</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://memodiction.com" class="project-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Visit Site
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3: Skill Quest -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="{{ '/assets/images/SkillQuest.png' | relative_url }}" alt="Skill Quest">
+            </div>
+            <div class="project-content">
+                <h3>Skill Quest</h3>
+                <p class="project-tagline">Gamified Learning Platform</p>
+                <p class="project-description">
+                    Gamified learning platform featuring 100+ coding challenges. Integrates LLMs for
+                    personalized feedback and adaptive difficulty adjustment.
+                </p>
+                <div class="project-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">OpenAI API</span>
+                    <span class="tech-tag">Docker</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/lanagasparyan/skillquest" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
