@@ -6,9 +6,9 @@
 .btn {
     padding: 0.875rem 2rem;
     border-radius: 0.5rem;
-    font-size: 1rem !important;
-    font-weight: 600 !important;
-    text-decoration: none !important;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -16,33 +16,33 @@
     border: 2px solid transparent;
     white-space: nowrap;
     cursor: pointer;
-    font-family: 'Inter', sans-serif !important;
+    font-family: 'Inter', sans-serif;
 
     &:hover {
-        text-decoration: none !important;
+        text-decoration: none;
     }
 }
 
 .btn-primary {
-    background: var(--accent) !important;
-    color: white !important;
+    background: var(--accent);
+    color: white;
 
     &:hover {
-        background: var(--accent-hover) !important;
-        color: white !important;
+        background: var(--accent-hover);
+        color: white;
         transform: translateY(-2px);
         box-shadow: 0 4px 12px var(--shadow-hover);
     }
 }
 
 .btn-outline {
-    background: transparent !important;
-    border-color: var(--card-border) !important;
-    color: var(--text-primary) !important;
+    background: transparent;
+    border-color: var(--card-border);
+    color: var(--text-primary);
 
     &:hover {
-        border-color: var(--accent) !important;
-        color: var(--accent) !important;
+        border-color: var(--accent);
+        color: var(--accent);
         transform: translateY(-2px);
     }
 }

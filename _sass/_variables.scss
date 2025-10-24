@@ -39,36 +39,35 @@
     --badge-text: #FFB3B3;
 }
 
-/* Global font family and size reset */
+/* Global font family and size */
 html {
-    font-size: 16px !important;
+    font-size: 16px;
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif !important;
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
     background-color: var(--bg-primary);
     color: var(--text-primary);
 }
 
-/* Override paragraph and common text elements */
+/* Paragraph styles */
 p {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-/* Reset headings to allow custom sizing */
+/* Heading defaults */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif !important;
-    line-height: 1.2 !important;
-    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+    line-height: 1.2;
 }
 
-/* Ensure navigation items use correct size */
+/* Navigation items */
 .nav-menu a,
 .nav-menu li {
-    font-size: 1rem !important;
+    font-size: 1rem;
 }
 
 /* Smooth theme transitions */
