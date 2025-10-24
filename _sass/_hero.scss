@@ -40,9 +40,14 @@
 
 .hero-tagline {
     font-size: 1.25rem !important;
+    font-weight: 400 !important;
     color: var(--text-secondary);
     margin-bottom: 2rem;
     line-height: 1.6;
+
+    strong {
+        font-weight: 600 !important;
+    }
 }
 
 .hero-badges {
