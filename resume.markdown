@@ -38,8 +38,6 @@ permalink: /resume/
                 <span class="contact-divider">|</span>
                 <span><i class="fas fa-map-marker-alt"></i> New York, NY</span>
                 <span class="contact-divider">|</span>
-                <span><i class="fas fa-phone"></i> +1-(917) 943-2490</span>
-                <span class="contact-divider">|</span>
                 <span><i class="fab fa-github"></i> <a href="https://github.com/lanagasparyan" target="_blank">github.com/lanagasparyan</a></span>
                 <span class="contact-divider">|</span>
                 <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lanagasparyan" target="_blank">linkedin.com/in/lanagasparyan</a></span>
