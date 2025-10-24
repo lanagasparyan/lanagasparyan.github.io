@@ -1,0 +1,340 @@
+/**
+ * About Page Styles
+ * Professional background, education, certifications, and personal interests
+ */
+
+.about-hero {
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+    border-bottom: 1px solid var(--card-border);
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+        color: var(--text-secondary);
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.about-section {
+    margin-bottom: 4rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        color: var(--text-primary);
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+
+        i {
+            color: var(--accent);
+            font-size: 1.75rem;
+        }
+    }
+
+    p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: var(--text-secondary);
+        margin-bottom: 1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 1.5rem 0;
+
+        li {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            padding-left: 2rem;
+            position: relative;
+            margin-bottom: 0.75rem;
+
+            &::before {
+                content: '\2022';
+                color: var(--accent);
+                font-weight: bold;
+                font-size: 1.5rem;
+                position: absolute;
+                left: 0.5rem;
+            }
+        }
+    }
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 2rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: var(--accent);
+    }
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -0.5rem;
+        top: 0.5rem;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--accent);
+        border: 2px solid var(--bg-primary);
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .timeline-date {
+        font-size: 0.875rem;
+        color: var(--accent);
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+    }
+
+    .timeline-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 0.25rem;
+    }
+
+    .timeline-subtitle {
+        font-size: 1rem;
+        color: var(--text-secondary);
+        margin-bottom: 0.5rem;
+    }
+
+    .timeline-description {
+        font-size: 1rem;
+        color: var(--text-secondary);
+        line-height: 1.6;
+    }
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.certification-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px var(--shadow-hover);
+        border-color: var(--accent);
+    }
+
+    .cert-icon {
+        width: 48px;
+        height: 48px;
+        background: var(--badge-bg);
+        color: var(--accent);
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .cert-title {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 0.5rem;
+    }
+
+    .cert-issuer {
+        font-size: 0.9375rem;
+        color: var(--text-secondary);
+        margin-bottom: 0.25rem;
+    }
+
+    .cert-date {
+        font-size: 0.875rem;
+        color: var(--accent);
+        font-weight: 500;
+    }
+}
+
+.interests-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.interest-item {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateX(4px);
+        border-color: var(--accent);
+    }
+
+    i {
+        font-size: 1.5rem;
+        color: var(--accent);
+        min-width: 24px;
+    }
+
+    .interest-text {
+        font-size: 1rem;
+        color: var(--text-secondary);
+    }
+}
+
+.contact-info {
+    background: var(--bg-secondary);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 3rem;
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        i {
+            font-size: 1.25rem;
+            color: var(--accent);
+            min-width: 24px;
+        }
+
+        .contact-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-value {
+            font-size: 1rem;
+            color: var(--text-primary);
+            font-weight: 500;
+
+            a {
+                color: var(--text-primary);
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: var(--accent);
+                }
+            }
+        }
+    }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 4rem 1.5rem 3rem;
+
+        h1 {
+            font-size: 2.25rem;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+        }
+    }
+
+    .about-content {
+        padding: 3rem 1.5rem;
+    }
+
+    .about-section {
+        margin-bottom: 3rem;
+
+        h2 {
+            font-size: 1.75rem;
+        }
+
+        p, ul li {
+            font-size: 1rem;
+        }
+    }
+
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interests-list {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
