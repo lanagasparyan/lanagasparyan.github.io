@@ -110,7 +110,7 @@ permalink: /
 <section class="section" id="projects">
     <div class="section-header">
         <h2>Featured Projects</h2>
-        <p class="section-subtitle">Real-world applications serving thousands of users</p>
+        <p class="section-subtitle">Some of my recent work</p>
     </div>
 
     <div class="projects-grid">
@@ -123,8 +123,8 @@ permalink: /
                 <h3>BinaryDecimal.com</h3>
                 <p class="project-tagline">40K+ Annual Users</p>
                 <p class="project-description">
-                    Full-stack educational platform for computer science students. Serves 40,000+ users annually
-                    with interactive binary/decimal conversion tools and learning resources.
+                    Comprehensive web toolkit with 17+ utilities including Markdown editor,
+                    password generator, and Mermaid diagram viewer.
                 </p>
                 <div class="project-tags">
                     <span class="tech-tag">React</span>
@@ -132,8 +132,8 @@ permalink: /
                     <span class="tech-tag">Tailwind CSS</span>
                     <span class="tech-tag">Vite</span>
                 </div>
-                <div class="project-links">
-                    <a href="https://binarydecimal.com" class="project-link" target="_blank">
+                <div class="project-footer">
+                    <a href="https://binarydecimal.com" class="btn btn-primary btn-small" target="_blank">
                         <i class="fas fa-external-link-alt"></i>
                         Visit Site
                     </a>
@@ -150,17 +150,17 @@ permalink: /
                 <h3>MemoDiction.com</h3>
                 <p class="project-tagline">25K+ Annual Users</p>
                 <p class="project-description">
-                    Interactive vocabulary memorization tool using spaced repetition algorithms.
-                    Helps students improve SAT/GRE scores with personalized learning paths.
+                    AI-powered dictionary with automated content generation pipeline using
+                    OpenAI API and advanced prompt engineering.
                 </p>
                 <div class="project-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">OpenAI API</span>
                     <span class="tech-tag">React</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">GitHub Actions</span>
                 </div>
-                <div class="project-links">
-                    <a href="https://memodiction.com" class="project-link" target="_blank">
+                <div class="project-footer">
+                    <a href="https://memodiction.com" class="btn btn-primary btn-small" target="_blank">
                         <i class="fas fa-external-link-alt"></i>
                         Visit Site
                     </a>
@@ -175,21 +175,21 @@ permalink: /
             </div>
             <div class="project-content">
                 <h3>Skill Quest</h3>
-                <p class="project-tagline">Gamified Learning Platform</p>
+                <p class="project-tagline">Full-Stack Application</p>
                 <p class="project-description">
-                    Gamified learning platform featuring 100+ coding challenges. Integrates LLMs for
-                    personalized feedback and adaptive difficulty adjustment.
+                    AI Learning Planner with secure JWT authentication, PostgreSQL database,
+                    and LLM integration, containerized with Docker.
                 </p>
                 <div class="project-tags">
-                    <span class="tech-tag">React</span>
                     <span class="tech-tag">Spring Boot</span>
-                    <span class="tech-tag">OpenAI API</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">PostgreSQL</span>
                     <span class="tech-tag">Docker</span>
                 </div>
-                <div class="project-links">
-                    <a href="https://github.com/lanagasparyan/skillquest" class="project-link" target="_blank">
+                <div class="project-footer">
+                    <a href="https://github.com/lanagasparyan/skillquest" class="btn btn-primary btn-small" target="_blank">
                         <i class="fab fa-github"></i>
-                        View Code
+                        View on GitHub
                     </a>
                 </div>
             </div>
@@ -200,19 +200,23 @@ permalink: /
 <!-- CTA SECTION -->
 <section class="section">
     <div class="cta-section">
-        <h2>Let's Build Something Great Together</h2>
+        <h2>Let's Work Together</h2>
         <p>
-            I'm always interested in hearing about new projects and opportunities.
-            Whether you have a question or just want to say hi, feel free to reach out!
+            Ready to collaborate on your next project? I bring a comprehensive skill set
+            and a passion for building innovative solutions.
         </p>
         <div class="cta-buttons">
-            <a href="mailto:{{ site.social.email }}" class="btn">
-                <i class="fas fa-envelope"></i>
-                Get In Touch
+            <a href="{{ '/projects/' | relative_url }}" class="btn btn-primary">
+                <i class="fas fa-briefcase"></i>
+                View All Projects
             </a>
             <a href="{{ '/resume/' | relative_url }}" class="btn btn-outline">
-                <i class="fas fa-file-alt"></i>
-                View Resume
+                <i class="fas fa-file-pdf"></i>
+                Download Resume
+            </a>
+            <a href="mailto:{{ site.social.email }}" class="btn btn-outline">
+                <i class="fas fa-envelope"></i>
+                Get in Touch
             </a>
         </div>
     </div>

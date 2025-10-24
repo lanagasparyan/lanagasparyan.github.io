@@ -1,36 +1,19 @@
-<!-- Modern Footer -->
-<footer class="site-footer">
+<!-- Footer -->
+<footer class="footer">
     <div class="footer-container">
-        <div class="footer-content">
-            <div class="footer-info">
-                <h3>{{ site.author }}</h3>
-                <p>Full-Stack Software Engineer</p>
-            </div>
-
-            <div class="footer-links">
-                <a href="{{ '/' | relative_url }}">Home</a>
-                <a href="{{ '/about/' | relative_url }}">About</a>
-                <a href="{{ '/projects/' | relative_url }}">Projects</a>
-                <a href="{{ '/skills/' | relative_url }}">Skills</a>
-                <a href="{{ '/resume/' | relative_url }}">Resume</a>
-            </div>
-
-            <div class="footer-social">
-                <a href="https://github.com/{{ site.social.github }}" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:{{ site.social.email }}" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
+        <div class="footer-text">
+            &copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Built with Jekyll & hosted on GitHub Pages.
         </div>
-
-        <div class="footer-bottom">
-            <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</p>
-            <p>Designed & developed with <i class="fas fa-heart" style="color: var(--accent);"></i> in New York</p>
+        <div class="footer-social">
+            <a href="https://github.com/{{ site.social.github }}" class="social-link" aria-label="GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" class="social-link" aria-label="LinkedIn" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:{{ site.social.email }}" class="social-link" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
         </div>
     </div>
 </footer>
