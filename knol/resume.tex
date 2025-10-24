@@ -1,0 +1,233 @@
+% Restructured Modern Resume - Optimized for 10-Second Recruiter Scan
+% Class and package configuration
+\documentclass[11pt,letterpaper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usepackage{ragged2e}
+\usepackage{pgfplots}
+\usepackage{pgf-pie}
+\pgfplotsset{compat=1.16}
+
+% Set page margins
+\geometry{left=0.5in, right=0.5in, top=0.5in, bottom=0.5in}
+
+% Define colors
+\definecolor{namecolor}{RGB}{50, 50, 50}
+\definecolor{sectioncolor}{RGB}{30, 30, 30}
+\definecolor{linkcolor}{RGB}{0, 0, 200}
+\definecolor{impactcolor}{RGB}{70, 70, 70}
+\definecolor{yearcolor}{RGB}{120, 120, 120}
+\definecolor{sectionbg}{RGB}{245, 245, 245}
+
+% Configure hyperref
+\hypersetup{
+    colorlinks=true,
+    urlcolor=linkcolor,
+    pdftitle={Lana Gasparyan Resume},
+    pdfauthor={Lana Gasparyan},
+}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Set paragraph spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+
+% Custom font size commands
+\newcommand{\normalsizesection}{\normalsize}
+\newcommand{\smallersection}{\small}
+\newcommand{\smallestsection}{\footnotesize}
+
+% Configure section formatting with colored box
+\titleformat{\section}
+    {\Large\bfseries\color{sectioncolor}}
+    {}
+    {0em}
+    {}
+    
+\titlespacing{\section}{0pt}{6pt}{1pt}
+
+% Custom section with background
+\newcommand{\sectionbox}[1]{%
+    \vspace{0.1em}
+    \begin{tcolorbox}[
+        colback=sectionbg,
+        colframe=sectionbg,
+        width=\textwidth,
+        left=5pt,
+        right=5pt,
+        top=2pt,
+        bottom=2pt,
+        boxrule=0pt,
+        arc=0pt,
+        boxsep=0pt,
+    ]
+    \section*{#1}
+    \end{tcolorbox}
+    \vspace{-0.4em}
+}
+
+% Custom commands
+\newcommand{\yearsright}[1]{{\footnotesize\bfseries\color{yearcolor} #1}}
+\newcommand{\impact}[1]{\textit{Impact: #1}}
+\newcommand{\tech}[1]{\textit{(#1)}}
+
+% Custom environment for resume entries
+\newenvironment{resumeentry}[5]{%
+    \noindent\textbf{#1}\if\relax\detokenize{#1}\relax\else, \fi%
+    \if\relax\detokenize{#2}\relax\else\textit{#2}, \fi%
+    \if\relax\detokenize{#3}\relax\else\textbf{#3}, \fi%
+    \if\relax\detokenize{#4}\relax\else#4\fi%
+    \if\relax\detokenize{#5}\relax\else\hfill\yearsright{#5}\fi\\[-6pt]
+}{\vspace{-3pt}}
+
+% Project entry with indentation
+\newenvironment{projectentry}{%
+    \leftskip=0cm
+    \par\noindent
+}{\par\leftskip=0cm\vspace{-2pt}}
+
+% Project description
+\newenvironment{projectdesc}{%
+    \footnotesize
+    \begin{itemize}[leftmargin=*, topsep=0pt, itemsep=0pt, parsep=0pt]
+}{\end{itemize}\smallersection\vspace{-1pt}}
+
+% Link with icon
+\newcommand{\iconlink}[3]{%
+    #1~\href{#2}{#3}%
+}
+
+% Project icon
+\newcommand{\projicon}[1]{%
+    {\small\color{gray!70}#1}~%
+}
+
+% Begin document
+\begin{document}
+
+% Header with side-by-side layout
+\begin{minipage}[t]{0.6\textwidth}
+    \vspace{0pt}
+    \fontsize{24pt}{28pt}\selectfont\textbf{\color{namecolor}Lana Gasparyan}\\[8pt]
+    \footnotesize lana5545@gmail.com | New York, NY | +1-(917) 943-2490
+\end{minipage}%
+\begin{minipage}[t]{0.4\textwidth}
+    \vspace{0pt}
+    \raggedright
+    \footnotesize\iconlink{\faGithub}{https://github.com/lanagasparyan}{github.com/lanagasparyan}\\
+    \footnotesize\iconlink{\faLinkedin}{https://www.linkedin.com/in/lanagasparyan}{linkedin.com/in/lanagasparyan}
+\end{minipage}
+
+\vspace{-1mm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{-4mm}
+
+% Summary section - CONDENSED
+\sectionbox{Summary}
+\smallersection
+
+\noindent Full-Stack Software Engineer/Developer with \textbf{3+ years} building production applications serving \textbf{65K+ annual users}. Expertise in \textbf{React, Spring Boot, and AWS} with proven ability to architect and deploy scalable web applications. Strong foundation in AI/LLM integration, microservices, RESTful API design, and modern DevOps practices. AWS Certified Cloud Practitioner.
+
+\normalsizesection
+
+% Professional Experience section - HONEST AND SUBSTANTIAL
+\sectionbox{Professional Experience}
+\smallersection
+
+\begin{projectentry}
+    \projicon{\faBriefcase} \textbf{Independent Software Engineer} \hfill \yearsright{2022 -- Present}
+\end{projectentry}
+\begin{projectdesc}
+    \item Built and deployed \href{https://binarydecimal.com}{\textbf{BinaryDecimal.com}} to Netlify/Vercel, comprehensive web toolkit with \textbf{17+ utilities} serving \textbf{40K+ users annually}, including full-featured Markdown editor, password generator, and Mermaid diagram editor/viewer
+    \item Created \href{https://memodiction.com}{\textbf{MemoDiction.com}}, AI-powered dictionary serving \textbf{25K+ users annually}, architecting automated content generation pipeline with OpenAI API and prompt engineering deployed via GitHub Actions CI/CD
+    \item Designed and built \textbf{Skill Quest}, full-stack AI Learning Planner from concept to production with secure JWT authentication, PostgreSQL database, and LLM integration, containerized with Docker and deployed to Railway
+    \item Developed custom Python solutions for \textbf{NetCDF scientific data} merging and analysis, processing multi-dimensional climate datasets for international research clients
+    \item Created automated Markdown to ENEX converter from scratch with complex formatting and metadata preservation for enterprise knowledge management
+\end{projectdesc}
+
+\normalsizesection
+
+% Skills section - MORE SCANNABLE
+\sectionbox{Technical Skills}
+\smallersection
+
+\begin{tabularx}{\textwidth}{@{} l X @{}}
+\textbf{Languages} & Python (Adept), Java, TypeScript, JavaScript, SQL, HTML/CSS, C++, Bash \\[2pt]
+\textbf{Frontend} & React, Vite, Tailwind CSS, Jekyll, Responsive Design \\[2pt]
+\textbf{Backend} & Spring Boot, Node.js, Flask, Django, RESTful APIs, Microservices, JWT Authentication \\[2pt]
+\textbf{Cloud \& DevOps} & AWS (EC2, S3, Lambda, CloudFront, Route 53, RDS), Docker, GitHub Actions, CI/CD, Serverless \\[2pt]
+\textbf{Data \& AI} & PostgreSQL, OpenAI API, LLM Integration, Prompt Engineering, NLP \\[2pt]
+\textbf{Practices} & Agile/Scrum, Test-Driven Development, Git Version Control
+\end{tabularx}
+
+\normalsizesection
+
+% Technical Projects section
+\sectionbox{Technical Projects}
+\smallersection
+
+
+\begin{projectentry}
+    \projicon{\faDatabase} \textbf{Enterprise Inventory Management Platform} \tech{Java, SQL, JavaFX, MVC Architecture}
+\end{projectentry}
+\begin{projectdesc}
+    \item Designed and developed production-ready inventory platform from requirements through deployment with Java, SQL database, JavaFX GUI, and MVC architecture
+    \item Implemented complete CRUD operations, real-time data synchronization, automated reporting dashboard, error handling, and unit testing
+\end{projectdesc}
+
+\begin{projectentry}
+    \projicon{\faLaptopCode} \textbf{AI-Powered Code Quality Analyzer} \tech{Python, NLP, React, REST API}
+\end{projectentry}
+\begin{projectdesc}
+    \item Built end-to-end full-stack application with Python Flask backend, React frontend, and RESTful API for automated code quality analysis and best practice recommendations
+    \item Implemented static code analysis, complexity detection, style guide enforcement, and AI-powered improvement suggestions with user authentication and CI/CD pipeline
+\end{projectdesc}
+
+\normalsizesection
+
+% Education section - MOVED DOWN
+\sectionbox{Education}
+\smallersection
+
+\noindent\textbf{Bachelor of Science in Software Engineering}, Western Governors University \hfill 2025
+
+\vspace{-2pt}
+\noindent\textbf{Front End Web Developer NanoDegree}, Udacity \hfill 2020
+
+\normalsizesection
+
+% Certifications section
+\sectionbox{Certifications}
+\smallersection
+
+\noindent\textbf{AWS Certified Cloud Practitioner} \hfill 2023
+
+\vspace{-2pt}
+\noindent\textbf{CompTIA Project+ Certification} \hfill 2025
+
+\vspace{2pt}
+\noindent{\footnotesize\textit{Additional:} ITIL Foundation, CompTIA A+, Google IT Support Professional}
+
+\normalsizesection
+
+\vspace{2pt}
+\begin{flushright}
+\textit{Authorized to work in the United States as a Permanent Resident}
+\end{flushright}
+
+\end{document}

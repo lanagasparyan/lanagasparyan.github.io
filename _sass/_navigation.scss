@@ -1,0 +1,190 @@
+/**
+ * Modern Navigation Styles
+ * Fixed header with blur backdrop and theme toggle
+ */
+
+.nav-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--card-border);
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: var(--accent);
+    }
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+    }
+
+    a {
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        position: relative;
+
+        &:hover {
+            color: var(--accent);
+        }
+
+        // Active page indicator
+        &.active {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        // Underline animation on hover
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+// Theme toggle button
+.theme-toggle {
+    background: var(--card-bg);
+    border: 2px solid var(--card-border);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: rotate(20deg);
+        border-color: var(--accent);
+    }
+
+    &:focus {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+    }
+}
+
+// Mobile hamburger menu
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+
+    span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: var(--text-primary);
+        transition: all 0.3s ease;
+    }
+
+    &.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    &.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    &.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
+// Responsive mobile styles
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: var(--bg-primary);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        transition: left 0.3s ease;
+        border-top: 1px solid var(--card-border);
+
+        &.active {
+            left: 0;
+        }
+
+        a::after {
+            display: none; // No underline animation on mobile
+        }
+    }
+
+    .theme-toggle {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+}
+
+// Hide nav on scroll down, show on scroll up
+.nav-header.hidden {
+    transform: translateY(-100%);
+}
+
+// Add padding to body to account for fixed header
+body {
+    padding-top: 60px;
+}

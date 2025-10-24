@@ -1,19 +1,7 @@
 ---
 layout: home
-classes: wide
-header:
-  overlay_color: "#000"
-  overlay_filter: 0.5
-  caption: "Welcome to Lana's Tech Journey"
-  actions:
-    - label: "About Me"
-      url: "/about/"
-    - label: "View Projects"
-      url: "/projects/"
-    - label: "Download Resume"
-      url: "/resume/"
-description: "Full-Stack Software Engineer with 3+ years building production applications serving 65K+ users. Expertise in React, Spring Boot, and AWS."
-paginate: true
+title: Home
+permalink: /
 ---
 
 ## Welcome to My Portfolio
