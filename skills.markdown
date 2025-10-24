@@ -339,7 +339,7 @@ permalink: /skills/
                 <i class="fas fa-briefcase"></i>
                 View My Projects
             </a>
-            <a href="{{ '/resume/' | relative_url }}" class="btn btn-outline">
+            <a href="https://github.com/lanagasparyan/Resume/blob/master/lana_gasparyan_resume_latest.pdf" class="btn btn-outline" target="_blank">
                 <i class="fas fa-file-pdf"></i>
                 Download Resume
             </a>

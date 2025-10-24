@@ -12,9 +12,9 @@ permalink: /resume/
         serving 65K+ annual users
     </p>
     <div class="resume-actions">
-        <a href="/assets/documents/Lana_Gasparyan_Resume.pdf" class="btn btn-primary" download>
+        <a href="https://github.com/lanagasparyan/Resume/blob/master/lana_gasparyan_resume_latest.pdf" class="btn btn-primary" target="_blank">
             <i class="fas fa-download"></i>
-            Download PDF
+            View Resume PDF
         </a>
         <a href="mailto:{{ site.social.email }}" class="btn btn-outline">
             <i class="fas fa-envelope"></i>
@@ -25,27 +25,9 @@ permalink: /resume/
 
 <!-- RESUME PAGE CONTENT -->
 <div class="resume-page-content">
-    <!-- PDF Viewer Section -->
-    <section class="pdf-viewer-section">
-        <h2>Resume Preview</h2>
-        <div class="pdf-container">
-            <iframe src="/assets/documents/Lana_Gasparyan_Resume.pdf" type="application/pdf" title="Lana Gasparyan Resume PDF">
-                <div class="pdf-fallback">
-                    <i class="fas fa-file-pdf"></i>
-                    <h3>PDF Viewer Not Supported</h3>
-                    <p>Your browser doesn't support inline PDF viewing. Please download the PDF to view it.</p>
-                    <a href="/assets/documents/Lana_Gasparyan_Resume.pdf" class="btn btn-primary" download>
-                        <i class="fas fa-download"></i>
-                        Download PDF Resume
-                    </a>
-                </div>
-            </iframe>
-        </div>
-    </section>
-
     <!-- Text Version for SEO -->
     <div class="resume-text-version">
-        <h2>Text Version</h2>
+        <h2>Resume</h2>
 
         <!-- Header -->
         <div class="resume-header-section">
@@ -218,9 +200,9 @@ permalink: /resume/
                 <i class="fas fa-envelope"></i>
                 Email Me
             </a>
-            <a href="{{ '/projects/' | relative_url }}" class="btn btn-outline">
-                <i class="fas fa-briefcase"></i>
-                View My Projects
+            <a href="https://github.com/lanagasparyan/Resume/blob/master/lana_gasparyan_resume_latest.pdf" class="btn btn-outline" target="_blank">
+                <i class="fas fa-file-pdf"></i>
+                Download Resume
             </a>
             <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" class="btn btn-outline" target="_blank">
                 <i class="fab fa-linkedin"></i>
