@@ -62,6 +62,11 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+
+    // Ensure all text and icons inside badges use correct size
+    *, i {
+        font-size: 0.875rem !important;
+    }
 }
 
 .hero-buttons {
