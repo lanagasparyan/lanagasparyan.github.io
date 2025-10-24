@@ -1,0 +1,63 @@
+/**
+ * Skills Section Styles
+ * Grid layout with cards and badges
+ */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px var(--shadow-hover);
+    }
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-badge {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    // Adept/expert skills highlighted with accent color
+    &.adept {
+        background: var(--accent);
+        color: white;
+        font-weight: 600;
+        box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+    }
+}
+
+[data-theme="dark"] .skill-badge.adept {
+    box-shadow: 0 2px 8px rgba(255, 155, 155, 0.2);
+}

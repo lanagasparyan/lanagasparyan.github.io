@@ -1,0 +1,65 @@
+/**
+ * Button Component System
+ * Reusable button styles with variants
+ */
+
+.btn {
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: white;
+
+    &:hover {
+        background: var(--accent-hover);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px var(--shadow-hover);
+    }
+}
+
+.btn-outline {
+    background: transparent;
+    border-color: var(--card-border);
+    color: var(--text-primary);
+
+    &:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+        transform: translateY(-2px);
+    }
+}
+
+.btn-small {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+}
+
+.btn-large {
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+}
+
+// Social button variants (for specific platforms)
+.btn-github {
+    @extend .btn-outline;
+}
+
+.btn-linkedin {
+    @extend .btn-outline;
+}

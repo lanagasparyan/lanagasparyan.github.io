@@ -4,61 +4,104 @@ title: Home
 permalink: /
 ---
 
-## Welcome to My Portfolio
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="hero-container">
+        <!-- Introduction with Image -->
+        <div class="hero-intro">
+            <div class="hero-content">
+                <h1>Hey there! I'm <span class="highlight">Lana</span></h1>
+                <p class="hero-tagline">
+                    Full-Stack Software Engineer with <strong>3+ years</strong> building production applications
+                    serving <strong>65K+ annual users</strong>. I specialize in React, Spring Boot, and AWS
+                    with expertise in AI/LLM integration and modern DevOps practices.
+                </p>
+                <div class="hero-badges">
+                    <div class="badge">
+                        <i class="fas fa-map-marker-alt"></i>
+                        New York, NY
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-graduation-cap"></i>
+                        BS Software Engineering
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-award"></i>
+                        AWS Certified
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="https://github.com/{{ site.social.github }}" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" class="btn btn-outline" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:{{ site.social.email }}" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-pic">
+                    <img src="{{ '/assets/images/ProfilePic.png' | relative_url }}" alt="Lana Gasparyan">
+                </div>
+            </div>
+        </div>
 
-I'm **Lana Gasparyan**, a Full-Stack Software Engineer with **3+ years** of experience building production applications that serve **65K+ annual users**. I specialize in **React, Spring Boot, and AWS** with a proven track record of architecting and deploying scalable web applications.
-
-### What I Do
-
-- **Full-Stack Development**: Building end-to-end web applications with modern frameworks
-- **Cloud Architecture**: Designing and deploying scalable solutions on AWS
-- **AI Integration**: Working with OpenAI APIs and LLM integration for intelligent applications
-- **DevOps & Automation**: Implementing CI/CD pipelines and containerized deployments
-
-### Featured Projects
-
-<div class="featured-projects">
-  <div class="project-card">
-    <h3>🌐 BinaryDecimal.com</h3>
-    <p>Comprehensive web toolkit with 17+ utilities serving <strong>40K+ users annually</strong></p>
-    <a href="https://binarydecimal.com" target="_blank" class="btn btn--small">Visit Site</a>
-  </div>
-  
-  <div class="project-card">
-    <h3>🤖 MemoDiction.com</h3>
-    <p>AI-powered dictionary serving <strong>25K+ users annually</strong> with automated content generation</p>
-    <a href="https://memodiction.com" target="_blank" class="btn btn--small">Visit Site</a>
-  </div>
-  
-  <div class="project-card">
-    <h3>🎯 Skill Quest</h3>
-    <p>Full-stack AI Learning Planner with secure authentication and PostgreSQL database</p>
-    <a href="/projects/" class="btn btn--small">Learn More</a>
-  </div>
-</div>
-
-### Key Achievements
-
-- ✅ **AWS Certified Cloud Practitioner** with hands-on cloud experience
-- ✅ **65K+ Annual Users** across multiple production applications
-- ✅ **Bachelor of Science in Software Engineering** from Western Governors University
-- ✅ **3+ Years** of full-stack development experience
-- ✅ **AI/LLM Integration** expertise with OpenAI APIs
-
-### Let's Connect
-
-I'm always interested in discussing new opportunities, interesting projects, or just having a chat about technology. Feel free to reach out!
-
-**Email**: lana5545@gmail.com | **Location**: New York, NY | **Phone**: +1-(917) 943-2490
-
-<div class="social-links">
-  <a href="https://github.com/lanagasparyan" target="_blank" class="btn btn--github">
-    <i class="fab fa-github"></i> GitHub
-  </a>
-  <a href="https://www.linkedin.com/in/lanagasparyan" target="_blank" class="btn btn--linkedin">
-    <i class="fab fa-linkedin"></i> LinkedIn
-  </a>
-  <a href="/resume/" class="btn btn--primary">
-    <i class="fas fa-file-pdf"></i> Download Resume
-  </a>
-</div>
+        <!-- Technical Expertise Section (within hero) -->
+        <div class="hero-skills">
+            <div class="section-header">
+                <h2>Technical Expertise</h2>
+                <p class="section-subtitle">Technologies I work with daily</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Languages</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge adept">Python</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">TypeScript</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Frontend & Backend</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge adept">React</span>
+                        <span class="skill-badge">Vite</span>
+                        <span class="skill-badge">Tailwind CSS</span>
+                        <span class="skill-badge adept">Spring Boot</span>
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Flask</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge adept">AWS</span>
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">GitHub Actions</span>
+                        <span class="skill-badge">PostgreSQL</span>
+                        <span class="skill-badge">CI/CD</span>
+                        <span class="skill-badge">REST APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
