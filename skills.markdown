@@ -36,6 +36,7 @@ permalink: /skills/
                 <h3>Proficient</h3>
                 <div class="skill-item">
                     <div class="skill-name">
+                        <i class="fab fa-python"></i>
                         <strong>Python</strong>
                         <span class="skill-badge">EXPERT</span>
                     </div>
@@ -46,6 +47,7 @@ permalink: /skills/
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">
+                        <i class="fab fa-js-square"></i>
                         <strong>JavaScript/TypeScript</strong>
                         <span class="skill-badge">EXPERT</span>
                     </div>
@@ -56,6 +58,7 @@ permalink: /skills/
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">
+                        <i class="fab fa-java"></i>
                         <strong>Java</strong>
                         <span class="skill-badge">EXPERT</span>
                     </div>
@@ -70,6 +73,7 @@ permalink: /skills/
                 <h3>Experienced</h3>
                 <div class="skill-item">
                     <div class="skill-name">
+                        <i class="fas fa-database"></i>
                         <strong>SQL</strong>
                     </div>
                     <p class="skill-description">
@@ -78,6 +82,7 @@ permalink: /skills/
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">
+                        <i class="fab fa-html5"></i>
                         <strong>HTML/CSS</strong>
                     </div>
                     <p class="skill-description">
@@ -86,6 +91,7 @@ permalink: /skills/
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">
+                        <i class="fas fa-terminal"></i>
                         <strong>Bash</strong>
                     </div>
                     <p class="skill-description">
@@ -107,22 +113,22 @@ permalink: /skills/
             <div class="skill-card">
                 <h3>Frameworks & Libraries</h3>
                 <ul>
-                    <li><strong>React</strong> - Component-based architecture, hooks, state management, and performance optimization</li>
-                    <li><strong>Vite</strong> - Modern build tooling for fast development experience</li>
-                    <li><strong>Tailwind CSS</strong> - Utility-first CSS framework for rapid UI development</li>
-                    <li><strong>Jekyll</strong> - Static site generation and content management</li>
+                    <li><i class="fab fa-react"></i> <strong>React</strong> - Component-based architecture, hooks, state management, and performance optimization</li>
+                    <li><i class="fas fa-bolt"></i> <strong>Vite</strong> - Modern build tooling for fast development experience</li>
+                    <li><i class="fas fa-wind"></i> <strong>Tailwind CSS</strong> - Utility-first CSS framework for rapid UI development</li>
+                    <li><i class="fas fa-file-code"></i> <strong>Jekyll</strong> - Static site generation and content management</li>
                 </ul>
             </div>
 
             <div class="skill-card">
                 <h3>Design & UX</h3>
                 <ul>
-                    <li>Responsive Web Design</li>
-                    <li>User Experience (UX) Design</li>
-                    <li>Cross-browser Compatibility</li>
-                    <li>Performance Optimization</li>
-                    <li>Accessibility (WCAG 2.1)</li>
-                    <li>Mobile-First Design</li>
+                    <li><i class="fas fa-mobile-alt"></i> Responsive Web Design</li>
+                    <li><i class="fas fa-pencil-ruler"></i> User Experience (UX) Design</li>
+                    <li><i class="fas fa-window-restore"></i> Cross-browser Compatibility</li>
+                    <li><i class="fas fa-tachometer-alt"></i> Performance Optimization</li>
+                    <li><i class="fas fa-universal-access"></i> Accessibility (WCAG 2.1)</li>
+                    <li><i class="fas fa-mobile"></i> Mobile-First Design</li>
                 </ul>
             </div>
         </div>
@@ -139,22 +145,22 @@ permalink: /skills/
             <div class="skill-card">
                 <h3>Frameworks & Technologies</h3>
                 <ul>
-                    <li><strong>Spring Boot</strong> - Enterprise Java applications and microservices architecture</li>
-                    <li><strong>Node.js</strong> - Server-side JavaScript and npm ecosystem</li>
-                    <li><strong>Flask</strong> - Lightweight Python web framework for APIs</li>
-                    <li><strong>Django</strong> - Full-featured Python web framework</li>
+                    <li><i class="fas fa-leaf"></i> <strong>Spring Boot</strong> - Enterprise Java applications and microservices architecture</li>
+                    <li><i class="fab fa-node-js"></i> <strong>Node.js</strong> - Server-side JavaScript and npm ecosystem</li>
+                    <li><i class="fas fa-flask"></i> <strong>Flask</strong> - Lightweight Python web framework for APIs</li>
+                    <li><i class="fas fa-code"></i> <strong>Django</strong> - Full-featured Python web framework</li>
                 </ul>
             </div>
 
             <div class="skill-card">
                 <h3>API & Integration</h3>
                 <ul>
-                    <li>RESTful API Design</li>
-                    <li>Microservices Architecture</li>
-                    <li>JWT Authentication</li>
-                    <li>API Documentation (OpenAPI/Swagger)</li>
-                    <li>WebSocket Communication</li>
-                    <li>Third-party API Integration</li>
+                    <li><i class="fas fa-plug"></i> RESTful API Design</li>
+                    <li><i class="fas fa-project-diagram"></i> Microservices Architecture</li>
+                    <li><i class="fas fa-key"></i> JWT Authentication</li>
+                    <li><i class="fas fa-book"></i> API Documentation (OpenAPI/Swagger)</li>
+                    <li><i class="fas fa-exchange-alt"></i> WebSocket Communication</li>
+                    <li><i class="fas fa-link"></i> Third-party API Integration</li>
                 </ul>
             </div>
         </div>
@@ -171,23 +177,23 @@ permalink: /skills/
             <div class="skill-card">
                 <h3>AWS Services</h3>
                 <ul>
-                    <li><strong>EC2</strong> - Virtual servers and compute instances</li>
-                    <li><strong>S3</strong> - Object storage and static website hosting</li>
-                    <li><strong>Lambda</strong> - Serverless computing and event-driven architecture</li>
-                    <li><strong>CloudFront</strong> - Content delivery network (CDN)</li>
-                    <li><strong>Route 53</strong> - DNS management and domain routing</li>
-                    <li><strong>RDS</strong> - Managed relational database service</li>
+                    <li><i class="fab fa-aws"></i> <strong>EC2</strong> - Virtual servers and compute instances</li>
+                    <li><i class="fab fa-aws"></i> <strong>S3</strong> - Object storage and static website hosting</li>
+                    <li><i class="fab fa-aws"></i> <strong>Lambda</strong> - Serverless computing and event-driven architecture</li>
+                    <li><i class="fab fa-aws"></i> <strong>CloudFront</strong> - Content delivery network (CDN)</li>
+                    <li><i class="fab fa-aws"></i> <strong>Route 53</strong> - DNS management and domain routing</li>
+                    <li><i class="fab fa-aws"></i> <strong>RDS</strong> - Managed relational database service</li>
                 </ul>
             </div>
 
             <div class="skill-card">
                 <h3>DevOps Tools</h3>
                 <ul>
-                    <li><strong>Docker</strong> - Containerization and deployment</li>
-                    <li><strong>GitHub Actions</strong> - CI/CD pipelines and automation</li>
-                    <li><strong>Git</strong> - Version control and collaborative development</li>
-                    <li><strong>Railway</strong> - Application deployment platform</li>
-                    <li><strong>Netlify/Vercel</strong> - Modern web hosting and deployment</li>
+                    <li><i class="fab fa-docker"></i> <strong>Docker</strong> - Containerization and deployment</li>
+                    <li><i class="fab fa-github"></i> <strong>GitHub Actions</strong> - CI/CD pipelines and automation</li>
+                    <li><i class="fab fa-git-alt"></i> <strong>Git</strong> - Version control and collaborative development</li>
+                    <li><i class="fas fa-rocket"></i> <strong>Railway</strong> - Application deployment platform</li>
+                    <li><i class="fas fa-cloud-upload-alt"></i> <strong>Netlify/Vercel</strong> - Modern web hosting and deployment</li>
                 </ul>
             </div>
         </div>
@@ -204,22 +210,22 @@ permalink: /skills/
             <div class="skill-card">
                 <h3>Databases</h3>
                 <ul>
-                    <li><strong>PostgreSQL</strong> - Advanced relational database management</li>
-                    <li><strong>SQL</strong> - Query optimization and database design</li>
-                    <li><strong>NoSQL</strong> - Document-based and key-value stores</li>
-                    <li>Database Migration and Versioning</li>
-                    <li>Data Modeling and Schema Design</li>
+                    <li><i class="fas fa-database"></i> <strong>PostgreSQL</strong> - Advanced relational database management</li>
+                    <li><i class="fas fa-table"></i> <strong>SQL</strong> - Query optimization and database design</li>
+                    <li><i class="fas fa-file-alt"></i> <strong>NoSQL</strong> - Document-based and key-value stores</li>
+                    <li><i class="fas fa-exchange-alt"></i> Database Migration and Versioning</li>
+                    <li><i class="fas fa-project-diagram"></i> Data Modeling and Schema Design</li>
                 </ul>
             </div>
 
             <div class="skill-card">
                 <h3>AI & Machine Learning</h3>
                 <ul>
-                    <li><strong>OpenAI API</strong> - Large language model integration</li>
-                    <li><strong>LLM Integration</strong> - AI-powered application development</li>
-                    <li><strong>Prompt Engineering</strong> - Optimizing AI model interactions</li>
-                    <li><strong>NLP</strong> - Natural language processing</li>
-                    <li>AI Content Generation Pipelines</li>
+                    <li><i class="fas fa-brain"></i> <strong>OpenAI API</strong> - Large language model integration</li>
+                    <li><i class="fas fa-robot"></i> <strong>LLM Integration</strong> - AI-powered application development</li>
+                    <li><i class="fas fa-magic"></i> <strong>Prompt Engineering</strong> - Optimizing AI model interactions</li>
+                    <li><i class="fas fa-language"></i> <strong>NLP</strong> - Natural language processing</li>
+                    <li><i class="fas fa-cogs"></i> AI Content Generation Pipelines</li>
                 </ul>
             </div>
         </div>
@@ -236,25 +242,25 @@ permalink: /skills/
             <div class="skill-card">
                 <h3>Methodologies</h3>
                 <ul>
-                    <li><strong>Agile/Scrum</strong> - Iterative development and sprint planning</li>
-                    <li><strong>Test-Driven Development (TDD)</strong> - Writing tests before code</li>
-                    <li><strong>Git Workflow</strong> - Feature branching and pull request reviews</li>
-                    <li><strong>Code Review</strong> - Quality assurance and knowledge sharing</li>
-                    <li>Continuous Integration/Continuous Deployment (CI/CD)</li>
+                    <li><i class="fas fa-sync-alt"></i> <strong>Agile/Scrum</strong> - Iterative development and sprint planning</li>
+                    <li><i class="fas fa-vial"></i> <strong>Test-Driven Development (TDD)</strong> - Writing tests before code</li>
+                    <li><i class="fab fa-git-alt"></i> <strong>Git Workflow</strong> - Feature branching and pull request reviews</li>
+                    <li><i class="fas fa-code-branch"></i> <strong>Code Review</strong> - Quality assurance and knowledge sharing</li>
+                    <li><i class="fas fa-infinity"></i> Continuous Integration/Continuous Deployment (CI/CD)</li>
                 </ul>
             </div>
 
             <div class="skill-card">
                 <h3>Tools & Environment</h3>
                 <ul class="tech-badges-list">
-                    <li>Git & GitHub</li>
-                    <li>VS Code</li>
-                    <li>IntelliJ IDEA</li>
-                    <li>Postman</li>
-                    <li>Docker</li>
-                    <li>Linux/Unix</li>
-                    <li>Terminal/CLI</li>
-                    <li>npm/yarn</li>
+                    <li><i class="fab fa-github"></i> Git & GitHub</li>
+                    <li><i class="fas fa-code"></i> VS Code</li>
+                    <li><i class="fas fa-lightbulb"></i> IntelliJ IDEA</li>
+                    <li><i class="fas fa-paper-plane"></i> Postman</li>
+                    <li><i class="fab fa-docker"></i> Docker</li>
+                    <li><i class="fab fa-linux"></i> Linux/Unix</li>
+                    <li><i class="fas fa-terminal"></i> Terminal/CLI</li>
+                    <li><i class="fab fa-npm"></i> npm/yarn</li>
                 </ul>
             </div>
         </div>
@@ -269,32 +275,32 @@ permalink: /skills/
 
         <div class="certifications-grid-skills">
             <div class="cert-card-skills">
-                <h4>AWS Certified Cloud Practitioner</h4>
+                <h4><i class="fab fa-aws"></i> AWS Certified Cloud Practitioner</h4>
                 <p>2023 - Amazon Web Services</p>
             </div>
 
             <div class="cert-card-skills">
-                <h4>CompTIA Project+</h4>
+                <h4><i class="fas fa-project-diagram"></i> CompTIA Project+</h4>
                 <p>2025 - CompTIA</p>
             </div>
 
             <div class="cert-card-skills">
-                <h4>Front End Web Developer NanoDegree</h4>
+                <h4><i class="fas fa-laptop-code"></i> Front End Web Developer NanoDegree</h4>
                 <p>2020 - Udacity</p>
             </div>
 
             <div class="cert-card-skills">
-                <h4>ITIL Foundation</h4>
+                <h4><i class="fas fa-cogs"></i> ITIL Foundation</h4>
                 <p>Certified - AXELOS</p>
             </div>
 
             <div class="cert-card-skills">
-                <h4>CompTIA A+</h4>
+                <h4><i class="fas fa-desktop"></i> CompTIA A+</h4>
                 <p>Certified - CompTIA</p>
             </div>
 
             <div class="cert-card-skills">
-                <h4>Google IT Support Professional</h4>
+                <h4><i class="fab fa-google"></i> Google IT Support Professional</h4>
                 <p>Certified - Google</p>
             </div>
         </div>
@@ -314,15 +320,15 @@ permalink: /skills/
             </div>
             <div class="learning-point">
                 <i class="fas fa-code-branch"></i>
-                <span>Contributing to open source projects</span>
+                <span>Working on collaborative development projects</span>
             </div>
             <div class="learning-point">
-                <i class="fas fa-users"></i>
-                <span>Attending tech conferences and workshops</span>
+                <i class="fas fa-book-reader"></i>
+                <span>Reading technical documentation and engineering blogs</span>
             </div>
             <div class="learning-point">
-                <i class="fas fa-chalkboard-teacher"></i>
-                <span>Mentoring other developers</span>
+                <i class="fas fa-puzzle-piece"></i>
+                <span>Solving coding challenges and algorithmic problems</span>
             </div>
         </div>
     </div>

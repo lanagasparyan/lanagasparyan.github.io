@@ -184,7 +184,9 @@ permalink: /projects/
         <!-- Project 4: Enterprise Inventory Management -->
         <div class="project-full-card">
             <div class="project-full-content">
-                <div class="project-full-image"></div>
+                <div class="project-full-image">
+                    <img src="{{ '/assets/images/enterpriseInventory/enterprise-inventory-screenshot.png' | relative_url }}" alt="Enterprise Inventory Management Platform">
+                </div>
                 <div class="project-full-details">
                     <div class="project-full-header">
                         <div class="project-full-title">
@@ -226,7 +228,9 @@ permalink: /projects/
         <!-- Project 5: AI Code Quality Analyzer -->
         <div class="project-full-card">
             <div class="project-full-content">
-                <div class="project-full-image"></div>
+                <div class="project-full-image">
+                    <img src="{{ '/assets/images/enterpriseInventory/AIpoweredCode.png' | relative_url }}" alt="AI-Powered Code Quality Analyzer">
+                </div>
                 <div class="project-full-details">
                     <div class="project-full-header">
                         <div class="project-full-title">
@@ -275,7 +279,9 @@ permalink: /projects/
         <!-- Project 6: Scientific Data Processing -->
         <div class="project-full-card">
             <div class="project-full-content">
-                <div class="project-full-image"></div>
+                <div class="project-full-image">
+                    <img src="{{ '/assets/images/enterpriseInventory/NetSDF.jpg' | relative_url }}" alt="Scientific Data Processing NetCDF">
+                </div>
                 <div class="project-full-details">
                     <div class="project-full-header">
                         <div class="project-full-title">

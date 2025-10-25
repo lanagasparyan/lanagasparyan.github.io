@@ -47,21 +47,22 @@ permalink: /about/
             My Journey
         </h2>
         <p>
-            My path into software engineering has been driven by a genuine passion for problem-solving and
-            continuous learning. I'm pursuing a <strong>BS in Software Engineering</strong> from Western Governors
-            University, where I've built a strong theoretical foundation while gaining hands-on experience through
-            real-world projects.
+            My path to becoming a software engineer was sparked by a real-world problem. While working in the medical
+            field, I identified a gap in our workflow and realized I could automate patient confirmations, which ignited
+            my passion for building tools that create efficiency.
         </p>
         <p>
-            Throughout my journey, I've focused on mastering both frontend and backend technologies, understanding
-            that the best solutions come from seeing the full picture. I've taught myself modern frameworks like
-            React and Vite, dove deep into Spring Boot for enterprise applications, and earned AWS certification
-            to validate my cloud architecture skills.
+            I channeled this new-found passion into a formal <strong>B.S. in Software Engineering</strong> from Western
+            Governors University. My education was hands-on; I dove deep into building full-stack applications, mastering
+            modern frameworks like React and Spring Boot and earning an AWS Certified Cloud Practitioner certification to
+            round out my cloud skills.
         </p>
         <p>
-            What drives me is the opportunity to build tools that make people's lives easier. Whether it's creating
-            a comprehensive web toolkit used by thousands daily or developing an AI-powered dictionary that helps
-            people learn, I love seeing my code make a real impact.
+            I build tools that make a real impact. I developed and launched <strong>MemoDiction.com</strong>, an AI-powered
+            dictionary, and <strong>BinaryDecimal.com</strong>, a web toolkit with 17+ utilities. These projects currently
+            serve over 65,000 users annually and validate my ability to see a project from an idea to a full-scale,
+            AI-integrated product. I am now looking for an opportunity to contribute my skills to a team and build
+            solutions that matter.
         </p>
     </section>
 
@@ -73,7 +74,7 @@ permalink: /about/
         </h2>
         <div class="timeline">
             <div class="timeline-item">
-                <div class="timeline-date">Expected 2025</div>
+                <div class="timeline-date">September 2025</div>
                 <div class="timeline-title">Bachelor of Science in Software Engineering</div>
                 <div class="timeline-subtitle">Western Governors University</div>
                 <div class="timeline-description">
@@ -176,7 +177,7 @@ permalink: /about/
             </div>
             <div class="interest-item">
                 <i class="fas fa-users"></i>
-                <span class="interest-text">Mentoring aspiring developers</span>
+                <span class="interest-text">Networking with tech professionals</span>
             </div>
             <div class="interest-item">
                 <i class="fas fa-book-reader"></i>

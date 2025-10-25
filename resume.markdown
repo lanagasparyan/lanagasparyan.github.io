@@ -138,7 +138,7 @@ permalink: /resume/
 
             <div class="resume-education-item">
                 <h4>Bachelor of Science in Software Engineering</h4>
-                <p class="edu-meta">Western Governors University | Expected 2025</p>
+                <p class="edu-meta">Western Governors University | September 2025</p>
             </div>
 
             <div class="resume-education-item">
