@@ -108,18 +108,9 @@
             font-size: 1rem;
             color: var(--text-secondary);
             padding: 0.5rem 0;
-            padding-left: 1.5rem;
+            padding-left: 0;
             position: relative;
             line-height: 1.6;
-
-            &::before {
-                content: '\2022';
-                color: var(--accent);
-                font-weight: bold;
-                font-size: 1.25rem;
-                position: absolute;
-                left: 0.25rem;
-            }
 
             strong {
                 color: var(--text-primary);

@@ -22,8 +22,17 @@
     }
 
     ul {
-        list-style: none;
+        list-style: none !important;
         padding-left: 0;
+        margin-left: 0;
+    }
+
+    ul li {
+        list-style-type: none !important;
+    }
+
+    ul li::before {
+        content: none !important;
     }
 }
 
