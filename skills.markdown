@@ -123,12 +123,12 @@ permalink: /skills/
             <div class="skill-card">
                 <h3>Design & UX</h3>
                 <ul>
-                    <li>Responsive Web Design</li>
-                    <li>User Experience (UX) Design</li>
-                    <li>Cross-browser Compatibility</li>
-                    <li>Performance Optimization</li>
-                    <li>Accessibility (WCAG 2.1)</li>
-                    <li>Mobile-First Design</li>
+                    <li><i class="fas fa-mobile-alt"></i> Responsive Web Design</li>
+                    <li><i class="fas fa-pencil-ruler"></i> User Experience (UX) Design</li>
+                    <li><i class="fas fa-browser"></i> Cross-browser Compatibility</li>
+                    <li><i class="fas fa-tachometer-alt"></i> Performance Optimization</li>
+                    <li><i class="fas fa-universal-access"></i> Accessibility (WCAG 2.1)</li>
+                    <li><i class="fas fa-mobile"></i> Mobile-First Design</li>
                 </ul>
             </div>
         </div>
@@ -155,12 +155,12 @@ permalink: /skills/
             <div class="skill-card">
                 <h3>API & Integration</h3>
                 <ul>
-                    <li>RESTful API Design</li>
-                    <li>Microservices Architecture</li>
-                    <li>JWT Authentication</li>
-                    <li>API Documentation (OpenAPI/Swagger)</li>
-                    <li>WebSocket Communication</li>
-                    <li>Third-party API Integration</li>
+                    <li><i class="fas fa-plug"></i> RESTful API Design</li>
+                    <li><i class="fas fa-project-diagram"></i> Microservices Architecture</li>
+                    <li><i class="fas fa-key"></i> JWT Authentication</li>
+                    <li><i class="fas fa-book"></i> API Documentation (OpenAPI/Swagger)</li>
+                    <li><i class="fas fa-exchange-alt"></i> WebSocket Communication</li>
+                    <li><i class="fas fa-link"></i> Third-party API Integration</li>
                 </ul>
             </div>
         </div>
@@ -242,25 +242,25 @@ permalink: /skills/
             <div class="skill-card">
                 <h3>Methodologies</h3>
                 <ul>
-                    <li><strong>Agile/Scrum</strong> - Iterative development and sprint planning</li>
-                    <li><strong>Test-Driven Development (TDD)</strong> - Writing tests before code</li>
-                    <li><strong>Git Workflow</strong> - Feature branching and pull request reviews</li>
-                    <li><strong>Code Review</strong> - Quality assurance and knowledge sharing</li>
-                    <li>Continuous Integration/Continuous Deployment (CI/CD)</li>
+                    <li><i class="fas fa-sync-alt"></i> <strong>Agile/Scrum</strong> - Iterative development and sprint planning</li>
+                    <li><i class="fas fa-vial"></i> <strong>Test-Driven Development (TDD)</strong> - Writing tests before code</li>
+                    <li><i class="fab fa-git-alt"></i> <strong>Git Workflow</strong> - Feature branching and pull request reviews</li>
+                    <li><i class="fas fa-code-branch"></i> <strong>Code Review</strong> - Quality assurance and knowledge sharing</li>
+                    <li><i class="fas fa-infinity"></i> Continuous Integration/Continuous Deployment (CI/CD)</li>
                 </ul>
             </div>
 
             <div class="skill-card">
                 <h3>Tools & Environment</h3>
                 <ul class="tech-badges-list">
-                    <li>Git & GitHub</li>
-                    <li>VS Code</li>
-                    <li>IntelliJ IDEA</li>
-                    <li>Postman</li>
-                    <li>Docker</li>
-                    <li>Linux/Unix</li>
-                    <li>Terminal/CLI</li>
-                    <li>npm/yarn</li>
+                    <li><i class="fab fa-github"></i> Git & GitHub</li>
+                    <li><i class="fas fa-code"></i> VS Code</li>
+                    <li><i class="fas fa-lightbulb"></i> IntelliJ IDEA</li>
+                    <li><i class="fas fa-paper-plane"></i> Postman</li>
+                    <li><i class="fab fa-docker"></i> Docker</li>
+                    <li><i class="fab fa-linux"></i> Linux/Unix</li>
+                    <li><i class="fas fa-terminal"></i> Terminal/CLI</li>
+                    <li><i class="fab fa-npm"></i> npm/yarn</li>
                 </ul>
             </div>
         </div>
@@ -275,32 +275,32 @@ permalink: /skills/
 
         <div class="certifications-grid-skills">
             <div class="cert-card-skills">
-                <h4>AWS Certified Cloud Practitioner</h4>
+                <h4><i class="fab fa-aws"></i> AWS Certified Cloud Practitioner</h4>
                 <p>2023 - Amazon Web Services</p>
             </div>
 
             <div class="cert-card-skills">
-                <h4>CompTIA Project+</h4>
+                <h4><i class="fas fa-project-diagram"></i> CompTIA Project+</h4>
                 <p>2025 - CompTIA</p>
             </div>
 
             <div class="cert-card-skills">
-                <h4>Front End Web Developer NanoDegree</h4>
+                <h4><i class="fas fa-laptop-code"></i> Front End Web Developer NanoDegree</h4>
                 <p>2020 - Udacity</p>
             </div>
 
             <div class="cert-card-skills">
-                <h4>ITIL Foundation</h4>
+                <h4><i class="fas fa-cogs"></i> ITIL Foundation</h4>
                 <p>Certified - AXELOS</p>
             </div>
 
             <div class="cert-card-skills">
-                <h4>CompTIA A+</h4>
+                <h4><i class="fas fa-desktop"></i> CompTIA A+</h4>
                 <p>Certified - CompTIA</p>
             </div>
 
             <div class="cert-card-skills">
-                <h4>Google IT Support Professional</h4>
+                <h4><i class="fab fa-google"></i> Google IT Support Professional</h4>
                 <p>Certified - Google</p>
             </div>
         </div>
