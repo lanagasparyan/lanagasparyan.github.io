@@ -125,7 +125,7 @@ permalink: /skills/
                 <ul>
                     <li><i class="fas fa-mobile-alt"></i> Responsive Web Design</li>
                     <li><i class="fas fa-pencil-ruler"></i> User Experience (UX) Design</li>
-                    <li><i class="fas fa-browser"></i> Cross-browser Compatibility</li>
+                    <li><i class="fas fa-window-restore"></i> Cross-browser Compatibility</li>
                     <li><i class="fas fa-tachometer-alt"></i> Performance Optimization</li>
                     <li><i class="fas fa-universal-access"></i> Accessibility (WCAG 2.1)</li>
                     <li><i class="fas fa-mobile"></i> Mobile-First Design</li>
