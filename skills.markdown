@@ -314,15 +314,15 @@ permalink: /skills/
             </div>
             <div class="learning-point">
                 <i class="fas fa-code-branch"></i>
-                <span>Contributing to open source projects</span>
+                <span>Working on collaborative development projects</span>
             </div>
             <div class="learning-point">
-                <i class="fas fa-users"></i>
-                <span>Attending tech conferences and workshops</span>
+                <i class="fas fa-book-reader"></i>
+                <span>Reading technical documentation and engineering blogs</span>
             </div>
             <div class="learning-point">
-                <i class="fas fa-chalkboard-teacher"></i>
-                <span>Mentoring other developers</span>
+                <i class="fas fa-puzzle-piece"></i>
+                <span>Solving coding challenges and algorithmic problems</span>
             </div>
         </div>
     </div>
