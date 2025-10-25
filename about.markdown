@@ -74,7 +74,7 @@ permalink: /about/
         </h2>
         <div class="timeline">
             <div class="timeline-item">
-                <div class="timeline-date">Expected 2025</div>
+                <div class="timeline-date">September 2025</div>
                 <div class="timeline-title">Bachelor of Science in Software Engineering</div>
                 <div class="timeline-subtitle">Western Governors University</div>
                 <div class="timeline-description">
