@@ -1,0 +1,17 @@
+# robots.txt for lanagasparyan.github.io
+# Allow all crawlers to index all content
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://lanagasparyan.github.io/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+# Uncomment if needed:
+# Crawl-delay: 1
+
+# Block specific paths if needed (examples):
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /*.json$

@@ -49,6 +49,33 @@ social:
   linkedin: lanagasparyan
   email: lana5545@gmail.com
 
+# SEO and Social Media Settings
+logo: /assets/images/favicon.png
+social_image: /assets/images/social-preview.png # Add a social preview image (1200x630px recommended)
+
+# Twitter Card Settings
+twitter:
+  username: # Add your Twitter username if you have one
+  card: summary_large_image
+
+# Facebook/Open Graph Settings
+facebook:
+  app_id: # Add Facebook App ID if you have one
+  publisher: # Facebook page URL if you have one
+
+# Additional SEO settings
+lang: en_US
+tagline: Full-Stack Software Engineer | React, Spring Boot, AWS
+keywords:
+  - Full-Stack Developer
+  - Software Engineer
+  - React Developer
+  - Spring Boot
+  - AWS
+  - Web Development
+  - Portfolio
+  - Lana Gasparyan
+
 # Site settings for GitHub Pages
 timezone: America/New_York
 encoding: utf-8
