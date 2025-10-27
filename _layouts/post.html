@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%B %-d, %Y" }}
+      </time>
+      {% if page.author %}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
+          </span>
+      {% endif %}
+      {% if page.read_time %}
+        • {% include read-time.html %}
+      {% endif %}
+    </p>
+
+    {% if page.categories.size > 0 %}
+      <div class="post-categories">
+        {% for category in page.categories %}
+          <a href="{{ site.baseurl }}/categories/#{{ category | slugify }}" class="category-badge">{{ category }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {% if page.tags.size > 0 %}
+    <footer class="post-footer">
+      <div class="post-tags">
+        <strong>Tags:</strong>
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}" class="tag-badge">#{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </footer>
+  {% endif %}
+
+  {% if page.share %}
+    <div class="page__share">
+      <h4 class="page__share-title">Share this post</h4>
+      {% include social-share.html %}
+    </div>
+  {% endif %}
+
+  {% if site.comments.provider and page.comments %}
+    <div class="page__comments">
+      {% include comments.html %}
+    </div>
+  {% endif %}
+
+  {% if page.related %}
+    <div class="page__related">
+      <h4 class="page__related-title">You might also enjoy</h4>
+      {% include posts-related.html %}
+    </div>
+  {% endif %}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

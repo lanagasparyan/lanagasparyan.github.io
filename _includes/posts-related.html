@@ -1,0 +1,26 @@
+{% assign related_posts = site.related_posts | default: site.posts | limit: 4 %}
+
+{% if related_posts.size > 0 %}
+<div class="grid__wrapper">
+  {% for post in related_posts %}
+    <div class="grid__item">
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        {% if post.header.teaser %}
+          <div class="archive__item-teaser">
+            <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}">
+          </div>
+        {% endif %}
+        <h2 class="archive__item-title" itemprop="headline">
+          <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+        </h2>
+        {% if post.excerpt %}
+          <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>
+        {% endif %}
+        <p class="page__meta">
+          <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%B %-d, %Y" }}
+        </p>
+      </article>
+    </div>
+  {% endfor %}
+</div>
+{% endif %}

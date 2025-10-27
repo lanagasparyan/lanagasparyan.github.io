@@ -38,13 +38,29 @@ plugins:
   - jekyll-include-cache
 
 # Personal portfolio settings
-author: Lana Gasparyan
 university: Western Governors University
 degree: Software Engineering
 location: New York, NY
 phone: +1-(917) 943-2490
 
-# Social media links
+# Author (for blog posts and author profile)
+author:
+  name: "Lana Gasparyan"
+  avatar: "/assets/images/Screenshot at Oct 22 11-38-53.png"
+  bio: "Full-Stack Software Engineer specializing in React, Spring Boot, and AWS. Building scalable applications and sharing what I learn."
+  location: "New York, NY"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lanagasparyan"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/lanagasparyan"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:lana5545@gmail.com"
+
+# Social media links (legacy - keeping for compatibility)
 social:
   github: lanagasparyan
   linkedin: lanagasparyan
@@ -82,3 +98,37 @@ locale: en-US
 title_separator: "|"
 search: true
 minimal_mistakes_skin: "mint"
+
+# Blog post defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: "Contents"
+
+# Category & Tag Archives (Liquid-based for GitHub Pages)
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# Comments (utterances - GitHub Issues based)
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light"
+    issue_term: "pathname"
+    repo: "lanagasparyan/lanagasparyan.github.io"

@@ -1,0 +1,20 @@
+# Authors configuration for blog posts
+# Use in front matter: author: lana
+
+lana:
+  name: "Lana Gasparyan"
+  bio: "Full-Stack Software Engineer with 3+ years building production applications serving 65K+ annual users. Passionate about React, Spring Boot, AWS, and AI/ML integration."
+  avatar: "/assets/images/Screenshot at Oct 22 11-38-53.png"
+  location: "New York, NY"
+  email: "lana5545@gmail.com"
+  uri: "https://lanagasparyan.github.io"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lanagasparyan"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/lanagasparyan"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:lana5545@gmail.com"
