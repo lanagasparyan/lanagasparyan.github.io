@@ -30,12 +30,11 @@ twitter_username: # Add your Twitter handle if you have one
 github_username: lanagasparyan
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+theme: null
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-include-cache
 
 # Personal portfolio settings
 author: Lana Gasparyan
@@ -50,31 +49,55 @@ social:
   linkedin: lanagasparyan
   email: lana5545@gmail.com
 
+# SEO and Social Media Settings
+logo: /assets/images/favicon.png
+social_image: /assets/images/social-preview.png # Add a social preview image (1200x630px recommended)
+
+# Twitter Card Settings
+twitter:
+  username: # Add your Twitter username if you have one
+  card: summary_large_image
+
+# Facebook/Open Graph Settings
+facebook:
+  app_id: # Add Facebook App ID if you have one
+  publisher: # Facebook page URL if you have one
+
+# Additional SEO settings
+lang: en_US
+tagline: Full-Stack Software Engineer | React, Spring Boot, AWS
+keywords:
+  - Full-Stack Developer
+  - Software Engineer
+  - React Developer
+  - Spring Boot
+  - AWS
+  - Web Development
+  - Portfolio
+  - Lana Gasparyan
+
 # Site settings for GitHub Pages
-timezone: America/New_York  # Change to your timezone
+timezone: America/New_York
 encoding: utf-8
 markdown: kramdown
 highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - assets/css/style.scss
 
 paginate: 5
 paginate_path: "/page:num/"

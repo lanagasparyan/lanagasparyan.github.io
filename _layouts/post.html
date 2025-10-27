@@ -1,0 +1,226 @@
+---
+layout: default
+---
+
+<div class="page-container">
+    <article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+            <div class="post-meta">
+                <span class="post-author">
+                    <i class="fas fa-user"></i>
+                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</span>
+                    </span>
+                </span>
+                <span class="post-date">
+                    <i class="far fa-calendar"></i>
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                        {{ page.date | date: "%B %-d, %Y" }}
+                    </time>
+                </span>
+                {% if page.categories.size > 0 %}
+                    <span class="post-category">{{ page.categories | first }}</span>
+                {% endif %}
+            </div>
+
+            <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
+
+            {% if page.excerpt %}
+            <meta itemprop="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+            {% endif %}
+
+            <!-- Hidden metadata for SEO -->
+            <meta itemprop="wordCount" content="{{ content | number_of_words }}">
+            {% if page.image %}
+            <meta itemprop="image" content="{{ page.image | absolute_url }}">
+            {% endif %}
+
+            {% if page.tags.size > 0 %}
+            <div class="post-tags">
+                {% for tag in page.tags %}
+                    <span class="tag-badge" itemprop="keywords">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </header>
+
+        <div class="post-content" itemprop="articleBody">
+            {{ content }}
+        </div>
+
+        <footer class="post-footer">
+            <div class="post-navigation">
+                {% if page.previous.url %}
+                <a href="{{ page.previous.url | relative_url }}" class="btn btn--outline btn--small">
+                    ← {{ page.previous.title }}
+                </a>
+                {% endif %}
+
+                {% if page.next.url %}
+                <a href="{{ page.next.url | relative_url }}" class="btn btn--outline btn--small">
+                    {{ page.next.title }} →
+                </a>
+                {% endif %}
+            </div>
+
+            <div class="back-to-blog">
+                <a href="{{ '/posts/' | relative_url }}" class="btn btn--primary">
+                    ← Back to Blog
+                </a>
+            </div>
+        </footer>
+    </article>
+</div>
+
+<!-- JSON-LD Structured Data for Blog Post -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+  "author": {
+    "@type": "Person",
+    "name": "{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}",
+    "url": "{{ site.url }}"
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}",
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.author }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.logo | absolute_url }}"
+    }
+  },
+  {% if page.image %}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ page.image | absolute_url }}",
+    "width": 1200,
+    "height": 630
+  },
+  {% endif %}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "wordCount": {{ content | number_of_words }},
+  {% if page.categories %}
+  "articleSection": "{{ page.categories | first }}",
+  {% endif %}
+  {% if page.tags %}
+  "keywords": "{{ page.tags | join: ', ' }}",
+  {% endif %}
+  "inLanguage": "en-US"
+}
+</script>
+
+<!-- JSON-LD BreadcrumbList for Better Navigation -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "{{ site.url }}/posts/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ page.title }}",
+      "item": "{{ page.url | absolute_url }}"
+    }
+  ]
+}
+</script>
+
+<!-- Mermaid.js for Diagram Rendering -->
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+
+    // Check if page has data-theme attribute (dark mode support)
+    const theme = document.documentElement.getAttribute('data-theme');
+
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: theme === 'dark' ? 'dark' : 'default',
+        themeVariables: {
+            primaryColor: '#FF6B6B',
+            primaryTextColor: theme === 'dark' ? '#e4e4e7' : '#2c3e50',
+            primaryBorderColor: '#FF8E53',
+            lineColor: theme === 'dark' ? '#a1a1aa' : '#7f8c8d',
+            secondaryColor: '#FFB088',
+            tertiaryColor: '#ffe8e8',
+            background: theme === 'dark' ? '#27272a' : '#fffcfb',
+            mainBkg: theme === 'dark' ? '#27272a' : '#fffcfb',
+            secondBkg: theme === 'dark' ? '#2d2d2d' : '#fef3ef',
+            textColor: theme === 'dark' ? '#e4e4e7' : '#2c3e50',
+            fontSize: '16px',
+            fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+        },
+        flowchart: {
+            curve: 'basis',
+            padding: 20
+        },
+        sequence: {
+            diagramMarginX: 50,
+            diagramMarginY: 10,
+            actorMargin: 50,
+            width: 150,
+            height: 65,
+            boxMargin: 10,
+            boxTextMargin: 5,
+            noteMargin: 10,
+            messageMargin: 35,
+            mirrorActors: true,
+            bottomMarginAdj: 1
+        },
+        gantt: {
+            titleTopMargin: 25,
+            barHeight: 20,
+            barGap: 4,
+            topPadding: 50,
+            leftPadding: 75,
+            gridLineStartPadding: 35,
+            fontSize: 11,
+            numberSectionStyles: 4,
+            axisFormat: '%Y-%m-%d'
+        }
+    });
+
+    // Update Mermaid theme when page theme changes
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.attributeName === 'data-theme') {
+                const newTheme = document.documentElement.getAttribute('data-theme');
+                mermaid.initialize({
+                    theme: newTheme === 'dark' ? 'dark' : 'default'
+                });
+                // Re-render all mermaid diagrams
+                document.querySelectorAll('.mermaid').forEach((element) => {
+                    const id = element.getAttribute('data-processed');
+                    if (id) {
+                        element.removeAttribute('data-processed');
+                        mermaid.init(undefined, element);
+                    }
+                });
+            }
+        });
+    });
+
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-theme']
+    });
+</script>
