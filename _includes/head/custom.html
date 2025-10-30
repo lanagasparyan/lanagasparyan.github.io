@@ -26,6 +26,10 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:image" content="{{ site.social_image | absolute_url }}">
+<meta property="og:image:width" content="976">
+<meta property="og:image:height" content="596">
+<meta property="og:image:alt" content="{{ site.title }} - {{ site.tagline }}">
 {% if page.layout == 'post' %}
 <meta property="article:author" content="{{ site.author }}">
 <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
@@ -40,6 +44,13 @@
 {% endfor %}
 {% endif %}
 {% endif %}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@{{ site.twitter.username }}">
+<meta name="twitter:creator" content="@{{ site.twitter.username }}">
+<meta name="twitter:image" content="{{ site.social_image | absolute_url }}">
+<meta name="twitter:image:alt" content="{{ site.title }} - {{ site.tagline }}">
 
 <!-- Schema.org JSON-LD for Website -->
 {% if page.url == "/" %}
