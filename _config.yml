@@ -51,7 +51,7 @@ social:
 
 # SEO and Social Media Settings
 logo: /assets/images/favicon.png
-social_image: /assets/images/social-preview.png # Add a social preview image (1200x630px recommended)
+social_image: /assets/images/SocialMediaPreviewImage.png # Social preview image for Open Graph/Twitter Cards
 
 # Twitter Card Settings
 twitter:
