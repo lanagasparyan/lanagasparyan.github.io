@@ -2,6 +2,7 @@
 layout: home
 title: "Projects"
 permalink: /projects/
+description: "Explore Lana Gasparyan's portfolio of full-stack web applications including React dashboards, Spring Boot APIs, and AWS cloud solutions. Real-world projects serving 65K+ users."
 ---
 
 <!-- PROJECTS HERO -->

@@ -2,6 +2,7 @@
 layout: page
 title: "Blog"
 permalink: /posts/
+description: "Read Lana Gasparyan's technical blog featuring insights on full-stack development, React, Spring Boot, AWS cloud infrastructure, and software engineering best practices."
 ---
 
 <div class="page-container">

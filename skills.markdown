@@ -2,6 +2,7 @@
 layout: home
 title: "Technical Skills"
 permalink: /skills/
+description: "Comprehensive overview of Lana Gasparyan's technical skills including React, TypeScript, Spring Boot, AWS, Docker, and modern web development tools. Full-stack development expertise."
 ---
 
 <!-- SKILLS HERO -->

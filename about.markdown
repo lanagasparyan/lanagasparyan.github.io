@@ -2,6 +2,7 @@
 layout: home
 title: "About Me"
 permalink: /about/
+description: "Learn about Lana Gasparyan, a Full-Stack Software Engineer with 3+ years of experience building scalable web applications using React, Spring Boot, and AWS. Based in New York, NY."
 ---
 
 <!-- ABOUT HERO -->

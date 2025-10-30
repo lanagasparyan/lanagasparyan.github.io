@@ -2,6 +2,7 @@
 layout: home
 title: "Resume"
 permalink: /resume/
+description: "Download Lana Gasparyan's professional resume. Full-Stack Software Engineer with expertise in React, Spring Boot, AWS. 3+ years experience at Western Governors University."
 ---
 
 <!-- RESUME HERO -->
