@@ -56,7 +56,7 @@ permalink: /
         <div class="hero-skills">
             <div class="section-header">
                 <h2>Technical Expertise</h2>
-                <p class="section-subtitle">Technologies I work with daily</p>
+                <p class="section-subtitle">Technologies I work with daily · <a href="{{ '/skills/' | relative_url }}" class="text-link">View all skills →</a></p>
             </div>
             <div class="skills-grid">
                 <div class="skill-card">

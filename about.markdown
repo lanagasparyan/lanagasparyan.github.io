@@ -33,6 +33,7 @@ description: "Learn about Lana Gasparyan, a Full-Stack Software Engineer with 3+
             and deployed multiple successful web applications, including <a href="https://binarydecimal.com" target="_blank">BinaryDecimal.com</a>
             (40K+ users) and <a href="https://memodiction.com" target="_blank">MemoDiction.com</a> (25K+ users),
             handling everything from infrastructure setup on AWS to implementing CI/CD pipelines with GitHub Actions.
+            <a href="{{ '/projects/' | relative_url }}">View all my projects</a> to see more of my work.
         </p>
         <p>
             I specialize in modern web technologies and have deep expertise in AI integration, having worked
@@ -155,6 +156,12 @@ description: "Learn about Lana Gasparyan, a Full-Stack Software Engineer with 3+
             <li><strong>Database Design</strong> - Creating efficient database schemas and optimizing queries for PostgreSQL and SQL databases</li>
             <li><strong>UI/UX Implementation</strong> - Crafting responsive, accessible interfaces with Tailwind CSS, ensuring great user experiences across all devices</li>
         </ul>
+        <p style="margin-top: 1.5rem;">
+            <a href="{{ '/skills/' | relative_url }}" class="btn btn-outline btn-small">
+                <i class="fas fa-arrow-right"></i>
+                Explore My Full Tech Stack
+            </a>
+        </p>
     </section>
 
     <!-- Beyond Code -->
