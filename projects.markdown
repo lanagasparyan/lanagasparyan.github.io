@@ -21,7 +21,8 @@ description: "Explore Lana Gasparyan's portfolio of full-stack web applications 
         <p>
             I specialize in building full-stack applications that solve real problems and serve real users.
             My projects span web development, AI integration, cloud architecture, and enterprise systems,
-            demonstrating proficiency across the entire development stack.
+            demonstrating proficiency across the entire development stack. Want to know more?
+            <a href="{{ '/about/' | relative_url }}">Read my full story</a>.
         </p>
         <div class="stats">
             <div class="stat-item">
