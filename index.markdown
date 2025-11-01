@@ -117,7 +117,7 @@ permalink: /
         <!-- Project 1: BinaryDecimal.com -->
         <div class="project-card">
             <div class="project-image">
-                <img src="{{ '/assets/images/binarydecimal/BinmaryDecimal.png' | relative_url }}" alt="BinaryDecimal.com">
+                <img src="{{ '/assets/images/binarydecimal/BinmaryDecimal.png' | relative_url }}" alt="BinaryDecimal.com" loading="lazy">
             </div>
             <div class="project-content">
                 <h3>BinaryDecimal.com</h3>
@@ -144,7 +144,7 @@ permalink: /
         <!-- Project 2: MemoDiction.com -->
         <div class="project-card">
             <div class="project-image">
-                <img src="{{ '/assets/images/memodiction/MemoDiction.png' | relative_url }}" alt="MemoDiction.com">
+                <img src="{{ '/assets/images/memodiction/MemoDiction.png' | relative_url }}" alt="MemoDiction.com" loading="lazy">
             </div>
             <div class="project-content">
                 <h3>MemoDiction.com</h3>
@@ -171,7 +171,7 @@ permalink: /
         <!-- Project 3: Skill Quest -->
         <div class="project-card">
             <div class="project-image">
-                <img src="{{ '/assets/images/Skillquest/Screenshot at Oct 24 17-39-35.png' | relative_url }}" alt="Skill Quest">
+                <img src="{{ '/assets/images/Skillquest/Screenshot at Oct 24 17-39-35.png' | relative_url }}" alt="Skill Quest" loading="lazy">
             </div>
             <div class="project-content">
                 <h3>Skill Quest</h3>
