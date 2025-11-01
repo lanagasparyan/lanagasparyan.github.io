@@ -48,7 +48,7 @@ description: "Explore Lana Gasparyan's portfolio of full-stack web applications 
         <div class="project-full-card">
             <div class="project-full-content">
                 <div class="project-full-image">
-                    <img src="{{ '/assets/images/binarydecimal/BinmaryDecimal.png' | relative_url }}" alt="BinaryDecimal.com">
+                    <img src="{{ '/assets/images/binarydecimal/BinmaryDecimal.png' | relative_url }}" alt="BinaryDecimal.com" loading="lazy">
                 </div>
                 <div class="project-full-details">
                     <div class="project-full-header">
@@ -89,7 +89,7 @@ description: "Explore Lana Gasparyan's portfolio of full-stack web applications 
         <div class="project-full-card">
             <div class="project-full-content">
                 <div class="project-full-image">
-                    <img src="{{ '/assets/images/memodiction/MemoDiction.png' | relative_url }}" alt="MemoDiction.com">
+                    <img src="{{ '/assets/images/memodiction/MemoDiction.png' | relative_url }}" alt="MemoDiction.com" loading="lazy">
                 </div>
                 <div class="project-full-details">
                     <div class="project-full-header">
@@ -130,7 +130,7 @@ description: "Explore Lana Gasparyan's portfolio of full-stack web applications 
         <div class="project-full-card">
             <div class="project-full-content">
                 <div class="project-full-image">
-                    <img src="{{ '/assets/images/Skillquest/Screenshot at Oct 24 17-39-35.png' | relative_url }}" alt="Skill Quest">
+                    <img src="{{ '/assets/images/Skillquest/Screenshot at Oct 24 17-39-35.png' | relative_url }}" alt="Skill Quest" loading="lazy">
                 </div>
                 <div class="project-full-details">
                     <div class="project-full-header">
@@ -187,7 +187,7 @@ description: "Explore Lana Gasparyan's portfolio of full-stack web applications 
         <div class="project-full-card">
             <div class="project-full-content">
                 <div class="project-full-image">
-                    <img src="{{ '/assets/images/enterpriseInventory/enterprise-inventory-screenshot.png' | relative_url }}" alt="Enterprise Inventory Management Platform">
+                    <img src="{{ '/assets/images/enterpriseInventory/enterprise-inventory-screenshot.png' | relative_url }}" alt="Enterprise Inventory Management Platform" loading="lazy">
                 </div>
                 <div class="project-full-details">
                     <div class="project-full-header">
@@ -231,7 +231,7 @@ description: "Explore Lana Gasparyan's portfolio of full-stack web applications 
         <div class="project-full-card">
             <div class="project-full-content">
                 <div class="project-full-image">
-                    <img src="{{ '/assets/images/enterpriseInventory/AIpoweredCode.png' | relative_url }}" alt="AI-Powered Code Quality Analyzer">
+                    <img src="{{ '/assets/images/enterpriseInventory/AIpoweredCode.png' | relative_url }}" alt="AI-Powered Code Quality Analyzer" loading="lazy">
                 </div>
                 <div class="project-full-details">
                     <div class="project-full-header">
@@ -282,7 +282,7 @@ description: "Explore Lana Gasparyan's portfolio of full-stack web applications 
         <div class="project-full-card">
             <div class="project-full-content">
                 <div class="project-full-image">
-                    <img src="{{ '/assets/images/enterpriseInventory/NetSDF.jpg' | relative_url }}" alt="Scientific Data Processing NetCDF">
+                    <img src="{{ '/assets/images/enterpriseInventory/NetSDF.jpg' | relative_url }}" alt="Scientific Data Processing NetCDF" loading="lazy">
                 </div>
                 <div class="project-full-details">
                     <div class="project-full-header">
